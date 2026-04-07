@@ -73,15 +73,14 @@ def render_archive(
     with open(path, "w", encoding="utf-8") as handle:
         handle.write(html)
 
-    # Render per-date archive pages for dates that don't have one yet
+    # Render per-date archive pages (always overwrite to stay in sync with JSON)
     if all_daily_nodes:
         index_template = env.get_template("index.html")
         for date, nodes in all_daily_nodes.items():
             date_path = os.path.join(archive_dir, f"{date}.html")
-            if not os.path.exists(date_path):
-                date_html = index_template.render(nodes=nodes, date=date, base_url=normalized_base_url)
-                with open(date_path, "w", encoding="utf-8") as handle:
-                    handle.write(date_html)
+            date_html = index_template.render(nodes=nodes, date=date, base_url=normalized_base_url)
+            with open(date_path, "w", encoding="utf-8") as handle:
+                handle.write(date_html)
 
     logger.info("Rendered archive listing with %d dates", len(entries))
     return path
