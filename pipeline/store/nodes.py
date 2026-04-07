@@ -14,6 +14,13 @@ def assemble_node(
 ) -> BriefingNode:
     """Assemble a full briefing node from the article and enrichment output."""
     event = classification.event
+    # Prefer LLM-generated human-readable event_key, fall back to hash
+    event_key = classification.event_key or compute_event_key(
+        jurisdiction=event.jurisdiction.value,
+        actors=event.actors,
+        object_=event.object,
+        action=event.action,
+    )
     return BriefingNode(
         title=article.title,
         url=article.url,
@@ -22,12 +29,7 @@ def assemble_node(
         category=classification.category,
         summary_ko=summary.summary_ko,
         event=event,
-        event_key=compute_event_key(
-            jurisdiction=event.jurisdiction.value,
-            actors=event.actors,
-            object_=event.object,
-            action=event.action,
-        ),
+        event_key=event_key,
         is_primary=True,
         title_ko=summary.title_ko,
     )

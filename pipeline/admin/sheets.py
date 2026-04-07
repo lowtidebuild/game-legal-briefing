@@ -57,6 +57,36 @@ def _get_worksheet(credentials_value: str, spreadsheet_id: str):
     return client.open_by_key(spreadsheet_id).sheet1
 
 
+def read_event_keys_from_sheets(
+    credentials_json: str | None,
+    spreadsheet_id: str | None,
+) -> set[str]:
+    """Read all existing event_keys from the admin spreadsheet."""
+    if not credentials_json or not spreadsheet_id:
+        return set()
+
+    try:
+        worksheet = _get_worksheet(credentials_json, spreadsheet_id)
+        all_values = worksheet.get_all_values()
+        if not all_values:
+            return set()
+
+        # Find the event_key column index from headers
+        headers = [h.strip().lower() for h in all_values[0]]
+        try:
+            ek_col = headers.index("event_key")
+        except ValueError:
+            logger.warning("No 'event_key' column found in Sheets headers")
+            return set()
+
+        keys = {row[ek_col].strip() for row in all_values[1:] if len(row) > ek_col and row[ek_col].strip()}
+        logger.info("Loaded %d event_keys from Google Sheets", len(keys))
+        return keys
+    except Exception as exc:  # pragma: no cover - integration boundary
+        logger.warning("Failed to read event_keys from Sheets: %s", exc)
+        return set()
+
+
 def sync_to_sheets(
     nodes: list[BriefingNode],
     credentials_json: str | None,
@@ -73,6 +103,12 @@ def sync_to_sheets(
 
     try:
         worksheet = _get_worksheet(credentials_json, spreadsheet_id)
+
+        # Ensure headers exist
+        existing = worksheet.get_all_values()
+        if not existing:
+            worksheet.append_row(SHEET_HEADERS)
+
         worksheet.append_rows([format_row(node) for node in nodes])
         logger.info("Synced %d rows to Google Sheets", len(nodes))
     except Exception as exc:  # pragma: no cover - integration boundary

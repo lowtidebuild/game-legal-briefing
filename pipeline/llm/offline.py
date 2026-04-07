@@ -106,6 +106,10 @@ class OfflineLLMProvider(LLMProvider):
         elif regulatory_phase == "enacted":
             action = "advanced or published new rules"
 
+        # Generate a readable event_key
+        topic = game_mechanic or "regulation"
+        event_key = f"{jurisdiction.lower()}_{topic}_{event_type}_sample"
+
         return {
             "category": category,
             "jurisdiction": jurisdiction,
@@ -116,4 +120,5 @@ class OfflineLLMProvider(LLMProvider):
             "action": action,
             "game_mechanic": game_mechanic,
             "time_hint": "",
+            "event_key": event_key,
         }

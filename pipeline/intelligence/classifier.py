@@ -30,6 +30,7 @@ CLASSIFIER_PROMPT = """Analyze this article and return JSON with:
 - action
 - game_mechanic
 - time_hint
+- event_key: a short, stable, human-readable identifier for the underlying regulatory EVENT (not the article). Use lowercase_snake_case. Format: {{jurisdiction}}_{{topic}}_{{action}}_{{year_or_quarter}}. Examples: "eu_lootbox_transparency_directive_2026", "us_ftc_coppa_enforcement_2026q1", "kr_age_rating_mobile_guidance_update". The SAME event covered by different news outlets MUST produce the SAME event_key.
 
 Allowed categories: {categories}
 Allowed jurisdictions: {jurisdictions}
@@ -47,6 +48,7 @@ Return JSON only."""
 class ClassificationResult:
     category: str
     event: LegalEvent
+    event_key: str = ""
 
 
 def _safe_enum(enum_cls, raw_value: str, default):
@@ -77,6 +79,8 @@ def classify_article(article: RawArticle, llm: LLMProvider) -> ClassificationRes
         if category not in VALID_CATEGORIES:
             category = "ETC"
 
+        event_key = str(payload.get("event_key", "")).strip().lower().replace(" ", "_")
+
         return ClassificationResult(
             category=category,
             event=LegalEvent(
@@ -101,6 +105,7 @@ def classify_article(article: RawArticle, llm: LLMProvider) -> ClassificationRes
                 game_mechanic=payload.get("game_mechanic"),
                 time_hint=str(payload.get("time_hint", "")),
             ),
+            event_key=event_key,
         )
     except Exception as exc:
         logger.warning("Classification failed for '%s': %s", article.title, exc)

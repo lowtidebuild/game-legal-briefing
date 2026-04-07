@@ -12,7 +12,7 @@ except ImportError:  # pragma: no cover - graceful fallback
     def load_dotenv() -> None:
         return None
 
-from pipeline.admin.sheets import sync_to_sheets
+from pipeline.admin.sheets import read_event_keys_from_sheets, sync_to_sheets
 from pipeline.config import load_config
 from pipeline.deliver.mailer import send_briefing_email
 from pipeline.intelligence.classifier import classify_article
@@ -87,14 +87,20 @@ def run_pipeline(
         summary = summarize_article(article, llm)
         nodes.append(assemble_node(article, classification, summary))
 
-    existing_event_keys = {entry.event_key for entry in dedup_index.entries if entry.event_key}
+    # EventKey dedup: Sheets is authoritative, JSON index is fallback
+    sheets_event_keys = read_event_keys_from_sheets(cfg.google_sheets_credentials, cfg.google_sheets_id)
+    json_event_keys = {entry.event_key for entry in dedup_index.entries if entry.event_key}
+    existing_event_keys = sheets_event_keys | json_event_keys
     unique_nodes = []
     seen_event_keys: set[str] = set()
     for node in nodes:
         if node.event_key in existing_event_keys or node.event_key in seen_event_keys:
+            logger.info("EventKey dedup: skipping '%s' (key: %s)", node.title[:50], node.event_key)
             continue
         seen_event_keys.add(node.event_key)
         unique_nodes.append(node)
+    if len(nodes) != len(unique_nodes):
+        logger.info("EventKey dedup removed %d duplicate events", len(nodes) - len(unique_nodes))
     nodes = unique_nodes
 
     save_daily(nodes, today, data_dir=output_data_dir)
