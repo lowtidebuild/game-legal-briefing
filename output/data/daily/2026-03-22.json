@@ -20,8 +20,9 @@
       "game_mechanic": null,
       "time_hint": ""
     },
-    "event_key": "fb8880a5bc52dda8",
-    "is_primary": true
+    "event_key": "cf7fbde9388bf0b5",
+    "is_primary": true,
+    "title_ko": ""
   },
   {
     "title": "Crimson Desert admits it used generative AI for \"early-stage iteration\" and apologises AI images were not replaced before release",
@@ -44,8 +45,9 @@
       "game_mechanic": null,
       "time_hint": ""
     },
-    "event_key": "0006c2ba571ac4fa",
-    "is_primary": true
+    "event_key": "6126256228b26179",
+    "is_primary": true,
+    "title_ko": ""
   },
   {
     "title": "AI was everywhere at gaming’s big developer conference — except the games",
@@ -68,7 +70,8 @@
       "game_mechanic": null,
       "time_hint": ""
     },
-    "event_key": "3a8936947d9ea93d",
-    "is_primary": true
+    "event_key": "95b0de05a196a57d",
+    "is_primary": true,
+    "title_ko": ""
   }
 ]

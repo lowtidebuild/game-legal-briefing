@@ -20,8 +20,9 @@
       "game_mechanic": null,
       "time_hint": ""
     },
-    "event_key": "e06061c36468a8ff",
-    "is_primary": true
+    "event_key": "77984fec402973ea",
+    "is_primary": true,
+    "title_ko": ""
   },
   {
     "title": "AI companies want to harvest improv actors’ skills to train AI on human emotion",
@@ -44,8 +45,9 @@
       "game_mechanic": null,
       "time_hint": ""
     },
-    "event_key": "a1eccd1c2216160f",
-    "is_primary": true
+    "event_key": "cf05034a62c346c0",
+    "is_primary": true,
+    "title_ko": ""
   },
   {
     "title": "Outsourcer Telus admits to attack – may have lost a petabyte of data to ShinyHunters",
@@ -68,8 +70,9 @@
       "game_mechanic": null,
       "time_hint": ""
     },
-    "event_key": "6b57e89602924d47",
-    "is_primary": true
+    "event_key": "c3885ce0915f2c83",
+    "is_primary": true,
+    "title_ko": ""
   },
   {
     "title": "Arc Raiders CEO says studio has \"re-recorded\" AI lines: \"A real professional actor is better than AI; that's just how it is\"",
@@ -92,7 +95,8 @@
       "game_mechanic": null,
       "time_hint": ""
     },
-    "event_key": "0709d170a2534788",
-    "is_primary": true
+    "event_key": "434a67739006b70d",
+    "is_primary": true,
+    "title_ko": ""
   }
 ]

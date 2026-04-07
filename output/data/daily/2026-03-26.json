@@ -20,8 +20,9 @@
       "game_mechanic": null,
       "time_hint": ""
     },
-    "event_key": "20ea1e40369661a6",
-    "is_primary": true
+    "event_key": "340f269511cdd5ca",
+    "is_primary": true,
+    "title_ko": ""
   },
   {
     "title": "\"Everything in the final version will definitely 100% be human made\" - But Owlcat says gen-AI is being used during The Expanse: Osiris Reborn development",
@@ -44,8 +45,9 @@
       "game_mechanic": null,
       "time_hint": ""
     },
-    "event_key": "cf6644fedce59123",
-    "is_primary": true
+    "event_key": "d723e799d31d65e6",
+    "is_primary": true,
+    "title_ko": ""
   },
   {
     "title": "Brit lawmaker targeted by AI deepfake fails to get answers from US Big Tech",
@@ -68,8 +70,9 @@
       "game_mechanic": null,
       "time_hint": ""
     },
-    "event_key": "1f15ca0f1e5f5ada",
-    "is_primary": true
+    "event_key": "99d9dc1a7b286df6",
+    "is_primary": true,
+    "title_ko": ""
   },
   {
     "title": "It's brutal out there: Deus Ex and Unreal composer says he's submitted 50 resumes and gotten one interview in the last year",
@@ -92,8 +95,9 @@
       "game_mechanic": null,
       "time_hint": ""
     },
-    "event_key": "f30bf232cca8beac",
-    "is_primary": true
+    "event_key": "e26ba7031c1723e9",
+    "is_primary": true,
+    "title_ko": ""
   },
   {
     "title": "AI Agents and Consumer Law: What Businesses Need to Know",
@@ -116,8 +120,9 @@
       "game_mechanic": null,
       "time_hint": ""
     },
-    "event_key": "c5a07670c74ea86e",
-    "is_primary": true
+    "event_key": "b1fb473cffef3840",
+    "is_primary": true,
+    "title_ko": ""
   },
   {
     "title": "FCC Moves to Prevent New Foreign Routers",
@@ -140,7 +145,8 @@
       "game_mechanic": null,
       "time_hint": ""
     },
-    "event_key": "3ffb1e98f25b4d2f",
-    "is_primary": true
+    "event_key": "63a550c41b20727a",
+    "is_primary": true,
+    "title_ko": ""
   }
 ]

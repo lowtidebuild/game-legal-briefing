@@ -20,8 +20,9 @@
       "game_mechanic": null,
       "time_hint": ""
     },
-    "event_key": "8789527714148ee1",
-    "is_primary": true
+    "event_key": "f8c594a7d90950b0",
+    "is_primary": true,
+    "title_ko": ""
   },
   {
     "title": "Gartner suggests Friday afternoon Copilot ban because tired users may be too lazy to check its mistakes",
@@ -44,7 +45,8 @@
       "game_mechanic": null,
       "time_hint": ""
     },
-    "event_key": "255d638edc5c0e4f",
-    "is_primary": true
+    "event_key": "db956f90130e766c",
+    "is_primary": true,
+    "title_ko": ""
   }
 ]

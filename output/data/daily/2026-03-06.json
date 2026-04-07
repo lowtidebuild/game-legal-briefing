@@ -20,8 +20,9 @@
       "game_mechanic": null,
       "time_hint": ""
     },
-    "event_key": "ff87170bdeadf5a2",
-    "is_primary": true
+    "event_key": "507b6f68bfffcfdc",
+    "is_primary": true,
+    "title_ko": ""
   },
   {
     "title": "Nintendo sues US government over Trump administration tariffs",
@@ -44,8 +45,9 @@
       "game_mechanic": null,
       "time_hint": ""
     },
-    "event_key": "4f1be2960790c330",
-    "is_primary": true
+    "event_key": "b8cc832e5c4050c0",
+    "is_primary": true,
+    "title_ko": ""
   },
   {
     "title": "\"We are providing guidance to developers\" - Discord promises a fix and \"additional protections\" following discovery of Arc Raiders bug that stored users' private messages",
@@ -68,8 +70,9 @@
       "game_mechanic": null,
       "time_hint": ""
     },
-    "event_key": "c37daf55f280f404",
-    "is_primary": true
+    "event_key": "f6dea3400000fe03",
+    "is_primary": true,
+    "title_ko": ""
   },
   {
     "title": "When AI Companies Go to War, Safety Gets Left Behind",
@@ -92,8 +95,9 @@
       "game_mechanic": null,
       "time_hint": ""
     },
-    "event_key": "50fe0abd05bb97ad",
-    "is_primary": true
+    "event_key": "29cfe6a7bc5134fa",
+    "is_primary": true,
+    "title_ko": ""
   },
   {
     "title": "SEC and CFTC progress toward harmonized crypto regulation",
@@ -116,8 +120,9 @@
       "game_mechanic": null,
       "time_hint": ""
     },
-    "event_key": "61e5b5d4c1224560",
-    "is_primary": true
+    "event_key": "0e743ec6ac3752ce",
+    "is_primary": true,
+    "title_ko": ""
   },
   {
     "title": "Stakeholder event on political advertising: agenda available now",
@@ -140,8 +145,9 @@
       "game_mechanic": null,
       "time_hint": ""
     },
-    "event_key": "c3e634433bdcec1d",
-    "is_primary": true
+    "event_key": "54f897699054f0a1",
+    "is_primary": true,
+    "title_ko": ""
   },
   {
     "title": "Developer use of generative AI may be declining",
@@ -164,8 +170,9 @@
       "game_mechanic": null,
       "time_hint": ""
     },
-    "event_key": "cdeb6465ce84c16d",
-    "is_primary": true
+    "event_key": "04d3114aeddb5221",
+    "is_primary": true,
+    "title_ko": ""
   },
   {
     "title": "The War on Iran Puts Global Chip Supplies and AI Expansion at Risk",
@@ -188,7 +195,8 @@
       "game_mechanic": null,
       "time_hint": ""
     },
-    "event_key": "070e4c44e73aa6cc",
-    "is_primary": true
+    "event_key": "11216a3cd37a6309",
+    "is_primary": true,
+    "title_ko": ""
   }
 ]

@@ -20,8 +20,9 @@
       "game_mechanic": null,
       "time_hint": ""
     },
-    "event_key": "f8aab6c2492b617a",
-    "is_primary": true
+    "event_key": "1be786224c719a53",
+    "is_primary": true,
+    "title_ko": ""
   },
   {
     "title": "Call Of Duty Pro Gets Dropped From His Team After Unsolicited Sexts Leak: ‘Sorry I Have A Real Life’",
@@ -44,8 +45,9 @@
       "game_mechanic": null,
       "time_hint": ""
     },
-    "event_key": "ff5068a9c4eb562c",
-    "is_primary": true
+    "event_key": "1c798f258301ee15",
+    "is_primary": true,
+    "title_ko": ""
   },
   {
     "title": "Really, you made this without AI? Prove it",
@@ -68,7 +70,8 @@
       "game_mechanic": null,
       "time_hint": ""
     },
-    "event_key": "e5f4c8cbad5540d8",
-    "is_primary": true
+    "event_key": "e8daaf076ee58bc7",
+    "is_primary": true,
+    "title_ko": ""
   }
 ]

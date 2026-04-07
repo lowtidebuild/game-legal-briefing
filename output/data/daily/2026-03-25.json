@@ -20,8 +20,9 @@
       "game_mechanic": null,
       "time_hint": ""
     },
-    "event_key": "98e412f3bdc2304f",
-    "is_primary": true
+    "event_key": "64d2d49a805fde9a",
+    "is_primary": true,
+    "title_ko": ""
   },
   {
     "title": "AI supply chain attacks don’t even require malware…just post poisoned documentation",
@@ -44,7 +45,8 @@
       "game_mechanic": null,
       "time_hint": ""
     },
-    "event_key": "1fe3ff504ad51ae1",
-    "is_primary": true
+    "event_key": "ecff2c264c899ced",
+    "is_primary": true,
+    "title_ko": ""
   }
 ]

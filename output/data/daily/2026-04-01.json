@@ -20,8 +20,9 @@
       "game_mechanic": null,
       "time_hint": ""
     },
-    "event_key": "e1ec6ace5b4e8903",
-    "is_primary": true
+    "event_key": "329ca6c5dd9bd04b",
+    "is_primary": true,
+    "title_ko": ""
   },
   {
     "title": "US Patent Office revokes Nintendo's controversial Pokémon battling patent in nonfinal decision",
@@ -44,8 +45,9 @@
       "game_mechanic": null,
       "time_hint": ""
     },
-    "event_key": "e5d06e381c7c097f",
-    "is_primary": true
+    "event_key": "c8e79c27aa829d36",
+    "is_primary": true,
+    "title_ko": ""
   },
   {
     "title": "'More time innovating; less time writing code:' Arc Raiders publisher Nexon believes AI will liberate its workforce",
@@ -68,7 +70,8 @@
       "game_mechanic": null,
       "time_hint": ""
     },
-    "event_key": "195d197374f8d614",
-    "is_primary": true
+    "event_key": "6b76a9edbbd2f122",
+    "is_primary": true,
+    "title_ko": ""
   }
 ]

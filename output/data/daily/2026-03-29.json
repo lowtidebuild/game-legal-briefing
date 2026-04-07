@@ -20,8 +20,9 @@
       "game_mechanic": null,
       "time_hint": ""
     },
-    "event_key": "f349bcb9c6fbb64a",
-    "is_primary": true
+    "event_key": "9ae800aa3c47946c",
+    "is_primary": true,
+    "title_ko": ""
   },
   {
     "title": "Apple’s long, bitter App Store antitrust war",
@@ -44,7 +45,8 @@
       "game_mechanic": null,
       "time_hint": ""
     },
-    "event_key": "b3e1535bb6a81e90",
-    "is_primary": true
+    "event_key": "c6c13cb6d0dec41c",
+    "is_primary": true,
+    "title_ko": ""
   }
 ]

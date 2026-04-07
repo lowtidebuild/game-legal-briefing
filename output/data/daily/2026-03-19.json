@@ -20,8 +20,9 @@
       "game_mechanic": null,
       "time_hint": ""
     },
-    "event_key": "7cf987a172ebf4f6",
-    "is_primary": true
+    "event_key": "f872fb82082e640f",
+    "is_primary": true,
+    "title_ko": ""
   },
   {
     "title": "索尼開發「保護型AI」反制吉卜力風格侵權 嘗試建立創作者分潤機制",
@@ -44,8 +45,9 @@
       "game_mechanic": null,
       "time_hint": ""
     },
-    "event_key": "42c9a7965209d43f",
-    "is_primary": true
+    "event_key": "33c5da88c7f1d963",
+    "is_primary": true,
+    "title_ko": ""
   },
   {
     "title": "CEF 2026: EDPB launches coordinated enforcement action on transparency and information obligations under the GDPR",
@@ -68,8 +70,9 @@
       "game_mechanic": null,
       "time_hint": ""
     },
-    "event_key": "8cde6d96785fca06",
-    "is_primary": true
+    "event_key": "5ff0b4a83f3fa165",
+    "is_primary": true,
+    "title_ko": ""
   },
   {
     "title": "Google says it will let UK publishers opt out of AI overviews",
@@ -92,8 +95,9 @@
       "game_mechanic": null,
       "time_hint": ""
     },
-    "event_key": "fb416797b9ed3d70",
-    "is_primary": true
+    "event_key": "ca0df3f2d2a88077",
+    "is_primary": true,
+    "title_ko": ""
   },
   {
     "title": "Tomb Raider Remastered studio denies using generative AI after new Challenge Mode gets panned by players",
@@ -116,8 +120,9 @@
       "game_mechanic": null,
       "time_hint": ""
     },
-    "event_key": "b71806fb6d19733b",
-    "is_primary": true
+    "event_key": "bc2221a8bb4f1df3",
+    "is_primary": true,
+    "title_ko": ""
   },
   {
     "title": "The Fight to Hold AI Companies Accountable for Children’s Deaths",
@@ -140,7 +145,8 @@
       "game_mechanic": null,
       "time_hint": ""
     },
-    "event_key": "b4353d4f289eb76d",
-    "is_primary": true
+    "event_key": "0cafff8bd2b807ce",
+    "is_primary": true,
+    "title_ko": ""
   }
 ]

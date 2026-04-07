@@ -20,8 +20,9 @@
       "game_mechanic": null,
       "time_hint": ""
     },
-    "event_key": "86f7e00a94fa80b1",
-    "is_primary": true
+    "event_key": "c6d9c779021cc20e",
+    "is_primary": true,
+    "title_ko": ""
   },
   {
     "title": "Nintendo reportedly planning revised Switch 2 model with replaceable battery in EU",
@@ -44,8 +45,9 @@
       "game_mechanic": null,
       "time_hint": ""
     },
-    "event_key": "f18e213f1a1b8ecf",
-    "is_primary": true
+    "event_key": "9e767bb7a7bcf149",
+    "is_primary": true,
+    "title_ko": ""
   },
   {
     "title": "Union workers send a message to game industry execs: 'Let go of the power now, or be forced to let go of it later.'",
@@ -68,8 +70,9 @@
       "game_mechanic": null,
       "time_hint": ""
     },
-    "event_key": "eb004b86fd624a5c",
-    "is_primary": true
+    "event_key": "80fbfca1a1f4d305",
+    "is_primary": true,
+    "title_ko": ""
   },
   {
     "title": "As Crimson Desert developer Pearl Abyss rushes to fix pressing issues, players are asking for updates to the time-gated dragon mount",
@@ -92,7 +95,8 @@
       "game_mechanic": null,
       "time_hint": ""
     },
-    "event_key": "5dbdf6f93d503400",
-    "is_primary": true
+    "event_key": "5901a9cfcd0045c8",
+    "is_primary": true,
+    "title_ko": ""
   }
 ]

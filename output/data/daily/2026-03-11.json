@@ -20,8 +20,9 @@
       "game_mechanic": null,
       "time_hint": ""
     },
-    "event_key": "e59b2f4ba9a683da",
-    "is_primary": true
+    "event_key": "3fb0b34a287c7c48",
+    "is_primary": true,
+    "title_ko": ""
   },
   {
     "title": "SAG-AFTRA issues a Do Not Work Order against Capcom for \"failing to initiate the signatory process\"",
@@ -44,8 +45,9 @@
       "game_mechanic": null,
       "time_hint": ""
     },
-    "event_key": "884483b33c681572",
-    "is_primary": true
+    "event_key": "8f1753e48fd9f6b1",
+    "is_primary": true,
+    "title_ko": ""
   },
   {
     "title": "Grammarly Is Facing a Class Action Lawsuit Over Its AI ‘Expert Review’ Feature",
@@ -68,8 +70,9 @@
       "game_mechanic": null,
       "time_hint": ""
     },
-    "event_key": "1cfca2397ff85ad2",
-    "is_primary": true
+    "event_key": "d0962aa038838699",
+    "is_primary": true,
+    "title_ko": ""
   },
   {
     "title": "Perplexity Comet hurtling toward Amazon ban",
@@ -92,7 +95,8 @@
       "game_mechanic": null,
       "time_hint": ""
     },
-    "event_key": "8128587071cd249b",
-    "is_primary": true
+    "event_key": "6625054c0a30fc7c",
+    "is_primary": true,
+    "title_ko": ""
   }
 ]

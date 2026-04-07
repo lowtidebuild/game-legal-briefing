@@ -20,8 +20,9 @@
       "game_mechanic": null,
       "time_hint": ""
     },
-    "event_key": "cd39ddcf7a366f15",
-    "is_primary": true
+    "event_key": "ab5c6420cfc30020",
+    "is_primary": true,
+    "title_ko": ""
   },
   {
     "title": "FTC Issues New Advance Notice of Proposed Rulemaking on Negative Option Marketing",
@@ -44,7 +45,8 @@
       "game_mechanic": null,
       "time_hint": ""
     },
-    "event_key": "56e86f13f8833141",
-    "is_primary": true
+    "event_key": "8b723d06aa226a5e",
+    "is_primary": true,
+    "title_ko": ""
   }
 ]

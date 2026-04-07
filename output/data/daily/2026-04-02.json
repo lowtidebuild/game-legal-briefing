@@ -20,8 +20,9 @@
       "game_mechanic": null,
       "time_hint": ""
     },
-    "event_key": "2e2f269a875181c5",
-    "is_primary": true
+    "event_key": "6cfc7932415c05e9",
+    "is_primary": true,
+    "title_ko": ""
   },
   {
     "title": "\"Nothing In Our Games Will Be AI-generated. Ever,\" Says Warframe Community Director",
@@ -44,8 +45,9 @@
       "game_mechanic": null,
       "time_hint": ""
     },
-    "event_key": "9e75c6b13df37073",
-    "is_primary": true
+    "event_key": "fc6d5bf0bc8b4253",
+    "is_primary": true,
+    "title_ko": ""
   },
   {
     "title": "Sony buys machine-learning company to help \"enhance gameplay visuals, improve rendering techniques, and unlock new levels of visual fidelity\" in PlayStation games",
@@ -68,8 +70,9 @@
       "game_mechanic": null,
       "time_hint": ""
     },
-    "event_key": "7bdc23eb16db4610",
-    "is_primary": true
+    "event_key": "da4568debce6993f",
+    "is_primary": true,
+    "title_ko": ""
   },
   {
     "title": "Take-Two Reshuffles Its AI Team",
@@ -92,8 +95,9 @@
       "game_mechanic": null,
       "time_hint": ""
     },
-    "event_key": "dd3c17dd602b334a",
-    "is_primary": true
+    "event_key": "a5e892b112bb73ef",
+    "is_primary": true,
+    "title_ko": ""
   },
   {
     "title": "Pinterest said he violated laid-off colleagues&#8217; privacy. Now he&#8217;s going public",
@@ -116,8 +120,9 @@
       "game_mechanic": null,
       "time_hint": ""
     },
-    "event_key": "151f413b27928036",
-    "is_primary": true
+    "event_key": "0291000bcd1d6541",
+    "is_primary": true,
+    "title_ko": ""
   },
   {
     "title": "US Patent Office rejects Nintendo's 'summon subcharacter and let it fight' patent",
@@ -140,8 +145,9 @@
       "game_mechanic": null,
       "time_hint": ""
     },
-    "event_key": "eba75c0e8562e3a2",
-    "is_primary": true
+    "event_key": "ca081d9c0c82fbca",
+    "is_primary": true,
+    "title_ko": ""
   },
   {
     "title": "Nexon calls Arc Raiders a \"Trojan Horse\" for proving controversial AI tools can build triple-A hits with smaller teams",
@@ -164,8 +170,9 @@
       "game_mechanic": null,
       "time_hint": ""
     },
-    "event_key": "3030473fe65abe81",
-    "is_primary": true
+    "event_key": "55d492b518311a42",
+    "is_primary": true,
+    "title_ko": ""
   },
   {
     "title": "PSA: Anyone with a link can view your Granola notes by default",
@@ -188,7 +195,8 @@
       "game_mechanic": null,
       "time_hint": ""
     },
-    "event_key": "acc43bde24e8811a",
-    "is_primary": true
+    "event_key": "2605bb160caf12b0",
+    "is_primary": true,
+    "title_ko": ""
   }
 ]

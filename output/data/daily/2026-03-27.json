@@ -20,8 +20,9 @@
       "game_mechanic": null,
       "time_hint": ""
     },
-    "event_key": "9055d0b168067d12",
-    "is_primary": true
+    "event_key": "2c8a4992bd735b15",
+    "is_primary": true,
+    "title_ko": ""
   },
   {
     "title": "Fifth Circuit Holds FTC Adjudication of Deceptive Advertising Claims Is Unconstitutional",
@@ -44,8 +45,9 @@
       "game_mechanic": null,
       "time_hint": ""
     },
-    "event_key": "45fe9ab5e838309a",
-    "is_primary": true
+    "event_key": "363a9e9e066d1008",
+    "is_primary": true,
+    "title_ko": ""
   },
   {
     "title": "AI Research Is Getting Harder to Separate From Geopolitics",
@@ -68,8 +70,9 @@
       "game_mechanic": null,
       "time_hint": ""
     },
-    "event_key": "dd4bccb0a6848b37",
-    "is_primary": true
+    "event_key": "bd06051044340da8",
+    "is_primary": true,
+    "title_ko": ""
   },
   {
     "title": "AFC Ajax drops ball as flaws let hackers play admin with tickets and bans",
@@ -92,8 +95,9 @@
       "game_mechanic": null,
       "time_hint": ""
     },
-    "event_key": "7ba943cba66374f2",
-    "is_primary": true
+    "event_key": "d2d1fa6456dcf846",
+    "is_primary": true,
+    "title_ko": ""
   },
   {
     "title": "Security boffins scoured the web and found hundreds of valid API keys",
@@ -116,7 +120,8 @@
       "game_mechanic": null,
       "time_hint": ""
     },
-    "event_key": "0ced7f91fe92bc26",
-    "is_primary": true
+    "event_key": "aeecb6050323edb1",
+    "is_primary": true,
+    "title_ko": ""
   }
 ]

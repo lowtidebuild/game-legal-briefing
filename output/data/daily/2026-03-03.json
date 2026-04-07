@@ -20,8 +20,9 @@
       "game_mechanic": null,
       "time_hint": ""
     },
-    "event_key": "7bf8e0a2f6139b66",
-    "is_primary": true
+    "event_key": "5cfbeb4ce9a6d395",
+    "is_primary": true,
+    "title_ko": ""
   },
   {
     "title": "\"An aggressive copyright troll\" spent years abusing DMCAs to turn a bizarre Japanese PC game into lost media, until \"they f***ed with\" preservation-focused historians with a legal team",
@@ -44,8 +45,9 @@
       "game_mechanic": null,
       "time_hint": ""
     },
-    "event_key": "ea819ec9632c0668",
-    "is_primary": true
+    "event_key": "ba254eed65c1442d",
+    "is_primary": true,
+    "title_ko": ""
   },
   {
     "title": "Star Citizen studio suffered a data breach in January, and some players aren't happy with the very quiet disclosure that only happened this week",
@@ -68,8 +70,9 @@
       "game_mechanic": null,
       "time_hint": ""
     },
-    "event_key": "b8d316b26cca8d01",
-    "is_primary": true
+    "event_key": "9ffc525757291e47",
+    "is_primary": true,
+    "title_ko": ""
   },
   {
     "title": "Leon Kennedy's voice actor doesn't believe AI can replace human performances, and paying 'for an actor's voice session is not that big of a deal' for games as big as Arc Raiders",
@@ -92,8 +95,9 @@
       "game_mechanic": null,
       "time_hint": ""
     },
-    "event_key": "55af9014eac5f088",
-    "is_primary": true
+    "event_key": "b767dfd4b3703431",
+    "is_primary": true,
+    "title_ko": ""
   },
   {
     "title": "Chat at your own risk! Data brokers are selling deeply personal bot transcripts",
@@ -116,8 +120,9 @@
       "game_mechanic": null,
       "time_hint": ""
     },
-    "event_key": "74daa99f01489fee",
-    "is_primary": true
+    "event_key": "1b82283da609ffaa",
+    "is_primary": true,
+    "title_ko": ""
   },
   {
     "title": "Chrome Gemini panel became privilege escalator for rogue extensions",
@@ -140,8 +145,9 @@
       "game_mechanic": null,
       "time_hint": ""
     },
-    "event_key": "0cd881a741715135",
-    "is_primary": true
+    "event_key": "c72856d95112c7ae",
+    "is_primary": true,
+    "title_ko": ""
   },
   {
     "title": "Scientists warn against crappy age verification: 'if implemented without careful consideration… the new regulation might cause more harm than good'",
@@ -164,8 +170,9 @@
       "game_mechanic": null,
       "time_hint": ""
     },
-    "event_key": "78c4401ef7c7737d",
-    "is_primary": true
+    "event_key": "e88df570e081d5ec",
+    "is_primary": true,
+    "title_ko": ""
   },
   {
     "title": "Gamers furious as indie studio Cloud Imperium quietly admits to data breach",
@@ -188,7 +195,8 @@
       "game_mechanic": null,
       "time_hint": ""
     },
-    "event_key": "76ad64a9d9f66b7c",
-    "is_primary": true
+    "event_key": "2e22fd4e8a157875",
+    "is_primary": true,
+    "title_ko": ""
   }
 ]

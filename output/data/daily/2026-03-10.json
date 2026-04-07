@@ -20,8 +20,9 @@
       "game_mechanic": null,
       "time_hint": ""
     },
-    "event_key": "8c3d897f592f132b",
-    "is_primary": true
+    "event_key": "62f68fb27ba16a95",
+    "is_primary": true,
+    "title_ko": ""
   },
   {
     "title": "Hyper Light Drifter studio Heart Machine voluntarily recognises union",
@@ -44,8 +45,9 @@
       "game_mechanic": null,
       "time_hint": ""
     },
-    "event_key": "d1371e6859abe14a",
-    "is_primary": true
+    "event_key": "418f52d215596cb6",
+    "is_primary": true,
+    "title_ko": ""
   },
   {
     "title": "Judge orders Perplexity to stop AI agents from shopping on Amazon",
@@ -68,8 +70,9 @@
       "game_mechanic": null,
       "time_hint": ""
     },
-    "event_key": "4bb62a45865746d3",
-    "is_primary": true
+    "event_key": "085fe12a07c7cd50",
+    "is_primary": true,
+    "title_ko": ""
   },
   {
     "title": "Listen to the Live Nation CEO&#8217;s alleged threats to a concert venue",
@@ -92,8 +95,9 @@
       "game_mechanic": null,
       "time_hint": ""
     },
-    "event_key": "8a06d0c7872d4824",
-    "is_primary": true
+    "event_key": "39064dae5bea83b7",
+    "is_primary": true,
+    "title_ko": ""
   },
   {
     "title": "Now you don't even need to pretend to read the terms of service, as US court rules that continued use can imply consent",
@@ -116,8 +120,9 @@
       "game_mechanic": null,
       "time_hint": ""
     },
-    "event_key": "1341959288d2f94d",
-    "is_primary": true
+    "event_key": "b944aaa7a4c8b625",
+    "is_primary": true,
+    "title_ko": ""
   },
   {
     "title": "Indie fund Outersloth has rejected every generative AI pitch it has received",
@@ -140,8 +145,9 @@
       "game_mechanic": null,
       "time_hint": ""
     },
-    "event_key": "cec76f58c0ff00b9",
-    "is_primary": true
+    "event_key": "346e97d6fc423250",
+    "is_primary": true,
+    "title_ko": ""
   },
   {
     "title": "Fake job applications pack malware that kills EDR before stealing data",
@@ -164,8 +170,9 @@
       "game_mechanic": null,
       "time_hint": ""
     },
-    "event_key": "65af2ff0dc981f52",
-    "is_primary": true
+    "event_key": "1c8de0e5413c64d3",
+    "is_primary": true,
+    "title_ko": ""
   },
   {
     "title": "Fake AI Content About the Iran War Is All Over X",
@@ -188,7 +195,8 @@
       "game_mechanic": null,
       "time_hint": ""
     },
-    "event_key": "c2531c45c32c5c13",
-    "is_primary": true
+    "event_key": "cbb6f54ed53f5382",
+    "is_primary": true,
+    "title_ko": ""
   }
 ]

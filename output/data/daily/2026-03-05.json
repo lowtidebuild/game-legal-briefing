@@ -20,8 +20,9 @@
       "game_mechanic": null,
       "time_hint": ""
     },
-    "event_key": "caac247a688adada",
-    "is_primary": true
+    "event_key": "1ed9bb363f6a56e7",
+    "is_primary": true,
+    "title_ko": ""
   },
   {
     "title": "Embark Studios rushes to fix Arc Raiders Discord integration bug as \"serious privacy and security violations\" may have exposed private Discord DMs, friends data, more",
@@ -44,8 +45,9 @@
       "game_mechanic": null,
       "time_hint": ""
     },
-    "event_key": "bd3e2605a0dc8f7f",
-    "is_primary": true
+    "event_key": "5eefd2f99e68bb3e",
+    "is_primary": true,
+    "title_ko": ""
   },
   {
     "title": "The Pokemon Company Pushes Back Against Trump Administration's Latest Pokemon Meme",
@@ -68,8 +70,9 @@
       "game_mechanic": null,
       "time_hint": ""
     },
-    "event_key": "a1acd08de6a84569",
-    "is_primary": true
+    "event_key": "098cce74c7167433",
+    "is_primary": true,
+    "title_ko": ""
   },
   {
     "title": "ByteDance’s AI Ambitions Are Being Hampered by Compute Restraints and Copyright Concerns",
@@ -92,7 +95,8 @@
       "game_mechanic": null,
       "time_hint": ""
     },
-    "event_key": "2eabadb287d72f11",
-    "is_primary": true
+    "event_key": "6a518f4eb98dcf0d",
+    "is_primary": true,
+    "title_ko": ""
   }
 ]

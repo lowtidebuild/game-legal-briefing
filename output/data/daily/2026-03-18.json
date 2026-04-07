@@ -20,8 +20,9 @@
       "game_mechanic": null,
       "time_hint": ""
     },
-    "event_key": "3fb3afc9cff2e00a",
-    "is_primary": true
+    "event_key": "3f079b8bfb052dba",
+    "is_primary": true,
+    "title_ko": ""
   },
   {
     "title": "Generative AI in game development: Navigating IP, regulation, and reputation",
@@ -44,7 +45,8 @@
       "game_mechanic": null,
       "time_hint": ""
     },
-    "event_key": "28701bf52c24a4bb",
-    "is_primary": true
+    "event_key": "0ba00a85e6b90ce7",
+    "is_primary": true,
+    "title_ko": ""
   }
 ]

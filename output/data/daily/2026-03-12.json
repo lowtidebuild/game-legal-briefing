@@ -20,8 +20,9 @@
       "game_mechanic": null,
       "time_hint": ""
     },
-    "event_key": "d8008eefb04c4761",
-    "is_primary": true
+    "event_key": "9b6b491daf6c688f",
+    "is_primary": true,
+    "title_ko": ""
   },
   {
     "title": "Game dev union members marched at GDC to propose a 'Game Workers' Bill of Rights'",
@@ -44,8 +45,9 @@
       "game_mechanic": null,
       "time_hint": ""
     },
-    "event_key": "7cf966f84d52f5a1",
-    "is_primary": true
+    "event_key": "10229e6665ca0bf6",
+    "is_primary": true,
+    "title_ko": ""
   },
   {
     "title": "Rogue AI agents can work together to hack systems and steal secrets",
@@ -68,7 +70,8 @@
       "game_mechanic": null,
       "time_hint": ""
     },
-    "event_key": "24db414f6aabe18f",
-    "is_primary": true
+    "event_key": "c91c07e4688f485d",
+    "is_primary": true,
+    "title_ko": ""
   }
 ]

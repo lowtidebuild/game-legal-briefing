@@ -20,8 +20,9 @@
       "game_mechanic": null,
       "time_hint": ""
     },
-    "event_key": "55ab66eb4979bf63",
-    "is_primary": true
+    "event_key": "fee4f510277eb3d7",
+    "is_primary": true,
+    "title_ko": ""
   },
   {
     "title": "Limited Run Seemingly Throws Old Guard Under The Bus, Promising No Future Delays",
@@ -44,8 +45,9 @@
       "game_mechanic": null,
       "time_hint": ""
     },
-    "event_key": "7b4a9969eb1c44e9",
-    "is_primary": true
+    "event_key": "3426eb6dc38c99cf",
+    "is_primary": true,
+    "title_ko": ""
   },
   {
     "title": "AI agents promise to 'run the business,' but who is liable if things go wrong?",
@@ -68,7 +70,8 @@
       "game_mechanic": null,
       "time_hint": ""
     },
-    "event_key": "80012419386e3430",
-    "is_primary": true
+    "event_key": "d2785558ed52d54f",
+    "is_primary": true,
+    "title_ko": ""
   }
 ]

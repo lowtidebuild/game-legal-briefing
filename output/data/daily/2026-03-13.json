@@ -20,8 +20,9 @@
       "game_mechanic": null,
       "time_hint": ""
     },
-    "event_key": "52bfd61defd7cc4a",
-    "is_primary": true
+    "event_key": "35a174e9540678e6",
+    "is_primary": true,
+    "title_ko": ""
   },
   {
     "title": "Google's AI Search Results Love to Refer You Back to Google",
@@ -44,7 +45,8 @@
       "game_mechanic": null,
       "time_hint": ""
     },
-    "event_key": "12d339326d1f77cf",
-    "is_primary": true
+    "event_key": "bb7506634b93d7b1",
+    "is_primary": true,
+    "title_ko": ""
   }
 ]

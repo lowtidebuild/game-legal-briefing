@@ -20,8 +20,9 @@
       "game_mechanic": null,
       "time_hint": ""
     },
-    "event_key": "c420cb6beca33f5a",
-    "is_primary": true
+    "event_key": "55313235b75dd994",
+    "is_primary": true,
+    "title_ko": ""
   },
   {
     "title": "Bombshell judgment demands Krafton immediately reinstate ousted CEO and return his authority over Subnautica 2",
@@ -44,8 +45,9 @@
       "game_mechanic": null,
       "time_hint": ""
     },
-    "event_key": "8416397f3c84986c",
-    "is_primary": true
+    "event_key": "c3790a11a4f88ee2",
+    "is_primary": true,
+    "title_ko": ""
   },
   {
     "title": "If you're still playing Pokémon Go, you're helping train data-gobbling GPS AI for Niantic Spatial",
@@ -68,8 +70,9 @@
       "game_mechanic": null,
       "time_hint": ""
     },
-    "event_key": "c011a399bdb631d0",
-    "is_primary": true
+    "event_key": "a7e870900b4201e5",
+    "is_primary": true,
+    "title_ko": ""
   },
   {
     "title": "DLSS 5 clearly overwrites game characters with AI beauty standards, but Nvidia says devs have 'artistic control'",
@@ -92,8 +95,9 @@
       "game_mechanic": null,
       "time_hint": ""
     },
-    "event_key": "8737d9be8527ef18",
-    "is_primary": true
+    "event_key": "703f40edcab864e6",
+    "is_primary": true,
+    "title_ko": ""
   },
   {
     "title": "Free Software Foundation calls for free-range LLMs rather than factory-farmed AI",
@@ -116,8 +120,9 @@
       "game_mechanic": null,
       "time_hint": ""
     },
-    "event_key": "fc7125a002300722",
-    "is_primary": true
+    "event_key": "48715b6ff94eeab5",
+    "is_primary": true,
+    "title_ko": ""
   },
   {
     "title": "Judge delivers bombshell order for Krafton to reinstate fired Subnautica 2 devs and CEO, putting $250m bonus package back on the table",
@@ -140,7 +145,8 @@
       "game_mechanic": null,
       "time_hint": ""
     },
-    "event_key": "8c81d2c36822e507",
-    "is_primary": true
+    "event_key": "a304d5d886be32ad",
+    "is_primary": true,
+    "title_ko": ""
   }
 ]

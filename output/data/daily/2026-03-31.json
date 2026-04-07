@@ -20,8 +20,9 @@
       "game_mechanic": null,
       "time_hint": ""
     },
-    "event_key": "3dcac8c1e38b91fa",
-    "is_primary": true
+    "event_key": "c69fd9db6176193f",
+    "is_primary": true,
+    "title_ko": ""
   },
   {
     "title": "The video game payment processor crisis may be getting better, thanks to the American Federal Trade Commission",
@@ -44,8 +45,9 @@
       "game_mechanic": null,
       "time_hint": ""
     },
-    "event_key": "06af85bb633cfab0",
-    "is_primary": true
+    "event_key": "59c8cb700f45fb32",
+    "is_primary": true,
+    "title_ko": ""
   },
   {
     "title": "In the long list of awful things AI might lead to we can also add killing open-source software",
@@ -68,7 +70,8 @@
       "game_mechanic": null,
       "time_hint": ""
     },
-    "event_key": "3f4efdff2370d426",
-    "is_primary": true
+    "event_key": "428f25196722a429",
+    "is_primary": true,
+    "title_ko": ""
   }
 ]

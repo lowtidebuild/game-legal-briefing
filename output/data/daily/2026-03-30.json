@@ -1,80 +1,202 @@
 [
   {
-    "title": "EU lawmakers advance transparency rules for loot boxes",
-    "url": "https://example.com/eu-loot-box",
-    "source": "Sample Feed",
+    "title": "Steam有望擺脫金流限制威脅！美國FTC 警告Visa、Mastercard不得干預合法商業活動",
+    "url": "https://4gamers.com.tw/news/detail/78089/frc-warns-visa-mastercard-no-longer-force-censorship",
+    "source": "4gamers",
     "pub_date": "2026-03-30",
-    "category": "CONSUMER_MONETIZATION",
+    "category": "PLATFORM_PUBLISHING",
     "summary_ko": [
-      "EU에서 루트박스 규제 관련 움직임이 포착됐다.",
-      "게임사 실무에 미칠 영향과 후속 집행 가능성을 함께 볼 필요가 있다.",
-      "원문 확인 후 대응 우선순위를 정리하기 좋은 이슈다."
+      "미국 FTC가 Visa, Mastercard, PayPal 등 금융거래 플랫폼에 대해 합법적 상업활동 방해 금지 경고를 발표했습니다.",
+      "트럼프 대통령의 '탈은행화 금지' 행정명령(2025년 8월 7일 서명) 이행을 위해 FTC가 180일 검토 기간 만료 후 강제 집행 준비 완료를 선언했습니다.",
+      "Steam, itch.io 등 게임 플랫폼이 과거 보수 단체 압력으로 인한 결제 차단 피해를 입었으나, 이제 미국 내 모든 금융·결제 시스템이 동일한 규제 기준 준수 의무를 지게 됩니다."
     ],
     "event": {
-      "jurisdiction": "EU",
-      "event_type": "legislation",
-      "regulatory_phase": "enacted",
-      "actors": [
-        "EU regulators"
-      ],
-      "object": "loot box mechanics",
-      "action": "advanced or published new rules",
-      "game_mechanic": "loot_box",
+      "jurisdiction": "Global",
+      "event_type": "other",
+      "regulatory_phase": "proposed",
+      "actors": [],
+      "object": "",
+      "action": "",
+      "game_mechanic": null,
       "time_hint": ""
     },
-    "event_key": "b88506c77e5323f9",
-    "is_primary": true
+    "event_key": "141fb8f0248281dc",
+    "is_primary": true,
+    "title_ko": ""
   },
   {
-    "title": "Korea updates mobile game age-rating guidance",
-    "url": "https://example.com/kr-age-rating",
-    "source": "Sample Feed",
+    "title": "Kingdom Come: Deliverance 2 studio allegedly fires \"obsolete\" translator to replace them with AI",
+    "url": "https://gamesindustry.biz/kingdom-come-deliverance-2-studio-allegedly-fires-obsolete-translator-to-replace-them-with-ai",
+    "source": "GamesIndustry.biz",
     "pub_date": "2026-03-30",
-    "category": "CONTENT_AGE",
+    "category": "LABOR_EMPLOYMENT",
     "summary_ko": [
-      "한국에서 연령등급 규정 관련 움직임이 포착됐다.",
-      "게임사 실무에 미칠 영향과 후속 집행 가능성을 함께 볼 필요가 있다.",
-      "원문 확인 후 대응 우선순위를 정리하기 좋은 이슈다."
+      "Warhorse Studios(Kingdom Come: Deliverance 2 개발사)의 전직 번역가가 AI 도입을 이유로 해고되었다고 주장하며, 회사가 비용 절감과 효율성 향상을 명목으로 자신의 직책을 '구식'으로 규정했다고 공개했습니다.",
+      "해당 번역가는 약 4년간 근무했으며, AI 번역 도입에 대한 과거 논의에도 불구하고 자신의 업무가 충분히 평가받고 있다고 믿었으나 예고 없이 해고 통보를 받았습니다.",
+      "이 사건은 게임 산업에서 AI 도입으로 인한 인력 감축 문제를 부각시키며, 직원 가치 평가와 노동 관행에 대한 기업 책임 문제를 제기하고 있습니다."
     ],
     "event": {
-      "jurisdiction": "KR",
-      "event_type": "legislation",
-      "regulatory_phase": "enacted",
-      "actors": [
-        "Korean regulators"
-      ],
-      "object": "mobile game age-rating guidance",
-      "action": "advanced or published new rules",
-      "game_mechanic": "age_rating",
+      "jurisdiction": "Global",
+      "event_type": "other",
+      "regulatory_phase": "proposed",
+      "actors": [],
+      "object": "",
+      "action": "",
+      "game_mechanic": null,
       "time_hint": ""
     },
-    "event_key": "51fe04fc73b3c20d",
-    "is_primary": true
+    "event_key": "916a804ac1831e08",
+    "is_primary": true,
+    "title_ko": ""
   },
   {
-    "title": "FTC settlement highlights children's privacy issues in gaming",
-    "url": "https://example.com/us-privacy",
-    "source": "Sample Feed",
+    "title": "Unity sees growth in engine revenue, shuts down IronSource ad network in favour of Vector AI user-acquisition platform",
+    "url": "https://gamesindustry.biz/unity-sees-growth-in-engine-revenue-shuts-down-ironsource-ad-network-in-favour-of-vector-ai-user-acquisition-platform",
+    "source": "GamesIndustry.biz",
+    "pub_date": "2026-03-30",
+    "category": "PLATFORM_PUBLISHING",
+    "summary_ko": [
+      "Unity은 IronSource 광고/사용자 획득 네트워크를 2026년 4월 30일 종료하고, 모바일 게임 퍼블리셔 Supersonic을 매각할 계획을 발표했습니다.",
+      "Vector AI 기반 광고 플랫폼이 강한 성장세(분기별 중두 자리 수 성장, 전체 Grow Solutions 수익의 56%)를 보이면서 IronSource의 부진과 대조를 이루고 있습니다.",
+      "2022년 IronSource 인수 이후 기업 문화 충돌, 2023년 Runtime Fee 논란, 경영진 대량 이탈 등으로 인한 구조 조정의 일환으로 평가됩니다."
+    ],
+    "event": {
+      "jurisdiction": "Global",
+      "event_type": "other",
+      "regulatory_phase": "proposed",
+      "actors": [],
+      "object": "",
+      "action": "",
+      "game_mechanic": null,
+      "time_hint": ""
+    },
+    "event_key": "bd4659bd2946d563",
+    "is_primary": true,
+    "title_ko": ""
+  },
+  {
+    "title": "Krafton shutters free-to-play PUBG spin-off after two months, in line with policy of using Early Access to \"quickly validate a game’s potential\"",
+    "url": "https://gamesindustry.biz/krafton-shutters-free-to-play-pubg-spin-off-after-two-months-in-line-with-policy-of-using-early-access-to-quickly-validate-a-games-potential",
+    "source": "GamesIndustry.biz",
+    "pub_date": "2026-03-30",
+    "category": "PLATFORM_PUBLISHING",
+    "summary_ko": [
+      "크래프톤이 2개월간의 얼리 액세스 기간 후 PUBG 스핀오프 게임 'PUBG Blindspot'을 서비스 종료하기로 결정했습니다.",
+      "해당 게임은 출시 초기 3,251명의 피크 플레이어를 기록했으나 최근 수백 명으로 감소했으며, 크래프톤은 약속한 수준의 게임 경험을 지속적으로 제공할 수 없다고 판단했습니다.",
+      "이는 크래프톤의 '소규모 팀 개발 구조' 정책에 부합하는 것으로, 얼리 액세스를 통해 게임의 잠재력을 신속히 검증한 후 추가 자원 투입을 결정하는 전략입니다."
+    ],
+    "event": {
+      "jurisdiction": "Global",
+      "event_type": "other",
+      "regulatory_phase": "proposed",
+      "actors": [],
+      "object": "",
+      "action": "",
+      "game_mechanic": null,
+      "time_hint": ""
+    },
+    "event_key": "8fa2fd4951c9db24",
+    "is_primary": true,
+    "title_ko": ""
+  },
+  {
+    "title": "OpenAI patches ChatGPT flaw that smuggled data over DNS",
+    "url": "https://go.theregister.com/feed/www.theregister.com/2026/03/30/openai_chatgpt_dns_data_snuggling_flaw",
+    "source": "The Register - Security",
     "pub_date": "2026-03-30",
     "category": "PRIVACY_SECURITY",
     "summary_ko": [
-      "미국에서 개인정보 규제 관련 움직임이 포착됐다.",
-      "게임사 실무에 미칠 영향과 후속 집행 가능성을 함께 볼 필요가 있다.",
-      "원문 확인 후 대응 우선순위를 정리하기 좋은 이슈다."
+      "OpenAI는 2026년 2월 ChatGPT의 DNS 채널을 통한 데이터 유출 취약점을 패치했으며, Check Point 연구팀이 단일 악의적 프롬프트로 보안 장치를 우회할 수 있음을 입증했습니다.",
+      "ChatGPT의 코드 실행 환경은 직접적인 아웃바운드 네트워크 요청을 차단했으나, DNS 프로토콜을 통한 사이드 채널 데이터 유출은 감지하지 못했습니다.",
+      "의료 정보, 개인 식별 정보 등이 유출될 경우 GDPR, HIPAA 등 규제 위반으로 이어질 수 있어 규제 산업 배포 시 심각한 법적 리스크가 존재합니다."
     ],
     "event": {
-      "jurisdiction": "US",
-      "event_type": "enforcement",
-      "regulatory_phase": "enforced",
-      "actors": [
-        "FTC"
-      ],
-      "object": "children's privacy in gaming",
-      "action": "took enforcement action",
-      "game_mechanic": "data_collection",
+      "jurisdiction": "Global",
+      "event_type": "other",
+      "regulatory_phase": "proposed",
+      "actors": [],
+      "object": "",
+      "action": "",
+      "game_mechanic": null,
       "time_hint": ""
     },
-    "event_key": "ea9f2b331041c5fc",
-    "is_primary": true
+    "event_key": "1e8c065055efdc1b",
+    "is_primary": true,
+    "title_ko": ""
+  },
+  {
+    "title": "Telnyx joins LiteLLM in latest PyPI package poisoning tied to Trivy breach",
+    "url": "https://go.theregister.com/feed/www.theregister.com/2026/03/30/telnyx_pypi_supply_chain_attack_litellm",
+    "source": "The Register - Security",
+    "pub_date": "2026-03-30",
+    "category": "PRIVACY_SECURITY",
+    "summary_ko": [
+      "TeamPCP 사이버범죄 집단이 Trivy 침해와 연계되어 PyPI에 악성 Telnyx 패키지를 배포했으며, 개발자 시스템에 자격증명 탈취 악성코드를 설치하려 시도했습니다.",
+      "Telnyx Python SDK 버전 4.87.1 및 4.87.2가 영향을 받았으며, 주당 34,000회 이상의 다운로드가 발생하는 패키지이므로 광범위한 노출 가능성이 있습니다.",
+      "게임사가 Python 기반 개발 도구나 의존성 관리 시스템을 사용하는 경우, 공급망 공격 리스크에 노출될 수 있으며 개발 환경 보안 감시 강화가 필요합니다."
+    ],
+    "event": {
+      "jurisdiction": "Global",
+      "event_type": "other",
+      "regulatory_phase": "proposed",
+      "actors": [],
+      "object": "",
+      "action": "",
+      "game_mechanic": null,
+      "time_hint": ""
+    },
+    "event_key": "dbde4b60dd00e546",
+    "is_primary": true,
+    "title_ko": ""
+  },
+  {
+    "title": "‘Smart Data 2035 – The UK’s Smart Data Strategy’",
+    "url": "https://regulationtomorrow.com/2026/03/smart-data-2035-the-uks-smart-data-strategy",
+    "source": "Norton Rose Fulbright - Regulation Tomorrow",
+    "pub_date": "2026-03-30",
+    "category": "PRIVACY_SECURITY",
+    "summary_ko": [
+      "영국 정부는 2026년 3월 26일 'Smart Data 2035' 정책 문서를 발표하여 2030년까지 5개 이상, 2035년까지 20개 이상의 스마트 데이터 스킴 운영을 목표로 설정했습니다.",
+      "Data (Use and Access) Act 2025에 따라 정부는 기업들의 스마트 데이터 스킴 참여를 의무화할 권한을 보유하며, 2029년까지 최소 3,600만 파운드를 투자할 계획입니다.",
+      "금융, 에너지, 소매, 통신, 운송 등 10개 주요 산업 부문에서 스마트 데이터 파일럿을 추진하고, 2027년 초 스마트 데이터 가이드북 발행 및 국제 협력을 통한 성장 동력화를 추구합니다."
+    ],
+    "event": {
+      "jurisdiction": "Global",
+      "event_type": "other",
+      "regulatory_phase": "proposed",
+      "actors": [],
+      "object": "",
+      "action": "",
+      "game_mechanic": null,
+      "time_hint": ""
+    },
+    "event_key": "28e723a74cf1b54c",
+    "is_primary": true,
+    "title_ko": ""
+  },
+  {
+    "title": "European Commission admits attackers broke into public web systems, but says little else",
+    "url": "https://go.theregister.com/feed/www.theregister.com/2026/03/30/european_commission_breach",
+    "source": "The Register - Security",
+    "pub_date": "2026-03-30",
+    "category": "PRIVACY_SECURITY",
+    "summary_ko": [
+      "유럽연합 집행위원회는 3월 24일 공개 웹 인프라에 대한 공격자 침입을 인정하였으며, 350GB 이상의 데이터가 AWS 클라우드 환경에서 유출되었을 가능성이 있습니다.",
+      "집행위원회는 내부 시스템은 영향을 받지 않았다고 주장하나, 유출된 데이터의 구체적 내용, 규모, 영향받은 대상 및 초기 침입 경로에 대한 상세 정보를 공개하지 않았습니다.",
+      "이번 사건은 지난달 집행위원회 직원 휴대폰 침해 사건에 이은 두 번째 보안 사건으로, 유럽 기관의 사이버보안 투명성 및 대응 체계에 대한 의문을 제기합니다."
+    ],
+    "event": {
+      "jurisdiction": "Global",
+      "event_type": "other",
+      "regulatory_phase": "proposed",
+      "actors": [],
+      "object": "",
+      "action": "",
+      "game_mechanic": null,
+      "time_hint": ""
+    },
+    "event_key": "4e073dc86536e861",
+    "is_primary": true,
+    "title_ko": ""
   }
 ]

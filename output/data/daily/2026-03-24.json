@@ -20,8 +20,9 @@
       "game_mechanic": null,
       "time_hint": ""
     },
-    "event_key": "ec295d8996f51a26",
-    "is_primary": true
+    "event_key": "b96b28f4dcee1fa6",
+    "is_primary": true,
+    "title_ko": ""
   },
   {
     "title": "\"It's all of us against apathy, entropy, and loss of art\" - Stop Killing Games has reached the EU Parliament, but what happens now?",
@@ -44,8 +45,9 @@
       "game_mechanic": null,
       "time_hint": ""
     },
-    "event_key": "5629fbdc9f6003b9",
-    "is_primary": true
+    "event_key": "e2425dc6bbd3365c",
+    "is_primary": true,
+    "title_ko": ""
   },
   {
     "title": "Disney quashes $1 billion deal with OpenAI after Sora video app shutters, vows to \"continue to engage with AI platforms\"",
@@ -68,8 +70,9 @@
       "game_mechanic": null,
       "time_hint": ""
     },
-    "event_key": "ecf27191ba24752c",
-    "is_primary": true
+    "event_key": "47bf0f4c5d755b3b",
+    "is_primary": true,
+    "title_ko": ""
   },
   {
     "title": "創作者保護工具 app「COLOPL Contents Protector」於日本推出 遏止 AI 未經授權的內容學習與利用",
@@ -92,7 +95,8 @@
       "game_mechanic": null,
       "time_hint": ""
     },
-    "event_key": "ceb2c7390721512c",
-    "is_primary": true
+    "event_key": "fd7cbacce652fc51",
+    "is_primary": true,
+    "title_ko": ""
   }
 ]

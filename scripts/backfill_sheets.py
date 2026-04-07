@@ -25,12 +25,6 @@ def main():
 
     worksheet = _get_worksheet(creds, sheet_id)
 
-    # Check if already backfilled (more than 50 rows = likely done)
-    existing = worksheet.get_all_values()
-    if len(existing) > 50:
-        print(f"Sheets already has {len(existing)} rows. Skipping backfill.")
-        return
-
     # Clear and write headers
     worksheet.clear()
     worksheet.append_row(SHEET_HEADERS)
