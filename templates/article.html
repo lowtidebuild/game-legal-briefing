@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{{ node.title }} · Game Legal Briefing</title>
+  <title>{{ node.title_ko or node.title }} · Game Legal Briefing</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;700&display=swap" rel="stylesheet">
@@ -32,7 +32,10 @@
         <span class="tag tag-jurisdiction">{{ node.event.jurisdiction.value }}</span>
         <span class="tag tag-phase">{{ node.event.regulatory_phase.value }}</span>
       </div>
-      <h1 class="card-title">{{ node.title }}</h1>
+      <h1 class="card-title">{% if node.title_ko %}{{ node.title_ko }}{% else %}{{ node.title }}{% endif %}</h1>
+      {% if node.title_ko %}
+      <p class="card-title-en">{{ node.title }}</p>
+      {% endif %}
       <p class="card-source">{{ node.source }} · {{ node.pub_date }}</p>
 
       <ul class="card-summary" style="margin-top:20px;">

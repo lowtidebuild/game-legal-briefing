@@ -82,8 +82,8 @@ def run_pipeline(
     nodes = []
     for article in articles:
         classification = classify_article(article, llm)
-        summary_ko = summarize_article(article, llm)
-        nodes.append(assemble_node(article, classification, summary_ko))
+        summary = summarize_article(article, llm)
+        nodes.append(assemble_node(article, classification, summary))
 
     existing_event_keys = {entry.event_key for entry in dedup_index.entries if entry.event_key}
     unique_nodes = []

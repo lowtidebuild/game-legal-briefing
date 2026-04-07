@@ -1,4 +1,5 @@
 from pipeline.intelligence.classifier import ClassificationResult
+from pipeline.intelligence.summarizer import SummaryResult
 from pipeline.models import EventType, Jurisdiction, LegalEvent, RegulatoryPhase
 from pipeline.sources.rss import RawArticle
 from pipeline.store.nodes import assemble_node
@@ -31,11 +32,12 @@ def _classification() -> ClassificationResult:
 
 
 def test_assemble_node():
-    node = assemble_node(_article(), _classification(), ["요약 1", "요약 2", "요약 3"])
+    summary = SummaryResult(title_ko="테스트 기사", summary_ko=["요약 1", "요약 2", "요약 3"])
+    node = assemble_node(_article(), _classification(), summary)
     assert node.title == "Test Article"
+    assert node.title_ko == "테스트 기사"
     assert node.category == "IP"
     assert node.event.jurisdiction == Jurisdiction.US
     assert len(node.summary_ko) == 3
     assert len(node.event_key) == 16
     assert node.is_primary is True
-

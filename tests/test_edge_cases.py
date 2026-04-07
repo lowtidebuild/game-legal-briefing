@@ -37,11 +37,12 @@ def test_classifier_defaults_invalid_category_to_etc():
 
 def test_summarizer_handles_string_instead_of_list():
     llm = MagicMock()
-    llm.generate_json.return_value = {"summary_ko": "단일 문자열 요약입니다."}
+    llm.generate_json.return_value = {"title_ko": "테스트", "summary_ko": "단일 문자열 요약입니다."}
     result = summarize_article(_article(), llm)
-    assert isinstance(result, list)
-    assert len(result) == 1
-    assert result[0] == "단일 문자열 요약입니다."
+    assert isinstance(result.summary_ko, list)
+    assert len(result.summary_ko) == 1
+    assert result.summary_ko[0] == "단일 문자열 요약입니다."
+    assert result.title_ko == "테스트"
 
 
 def test_prune_skips_malformed_dates():

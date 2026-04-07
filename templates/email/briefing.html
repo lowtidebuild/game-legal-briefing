@@ -18,12 +18,10 @@
 </head>
 <body style="margin:0; padding:0; background-color:#F0F0EE; -webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; font-family:'Helvetica Neue', Helvetica, Arial, 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif;">
 
-<!-- Outer wrapper -->
 <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:#F0F0EE;">
   <tr>
     <td align="center" style="padding:24px 16px;">
 
-      <!-- Inner container: 600px max -->
       <table role="presentation" width="600" cellpadding="0" cellspacing="0" border="0" style="max-width:600px; width:100%; background-color:#FFFFFF;">
 
         <!-- HEADER -->
@@ -37,14 +35,14 @@
               </tr>
               <tr>
                 <td style="font-family:'Helvetica Neue', Helvetica, Arial, sans-serif; font-size:15px; color:#6B7280; padding-top:8px; line-height:1.4;">
-                  {{ date }} · 게임 산업 규제 브리핑
+                  {{ date }} · {{ nodes|length }}건의 규제 동향
                 </td>
               </tr>
             </table>
           </td>
         </tr>
 
-        <!-- CTA: 웹에서 보기 -->
+        <!-- CTA -->
         <tr>
           <td style="padding:20px 32px 8px 32px;" align="center">
             <table role="presentation" cellpadding="0" cellspacing="0" border="0">
@@ -59,24 +57,32 @@
           </td>
         </tr>
 
-        <!-- BRIEFING ITEMS -->
-        {% for node in nodes %}
-        <tr>
-          <td style="padding:{% if loop.first %}24px{% else %}0{% endif %} 32px 0 32px;">
-            <!-- Divider between items -->
-            {% if not loop.first %}
-            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
-              <tr><td style="border-top:1px solid #E5E5E5; padding-top:20px;"></td></tr>
-            </table>
-            {% endif %}
+        <!-- BRIEFING ITEMS GROUPED BY CATEGORY -->
+        {% set ns = namespace(current_cat='') %}
+        {% for node in nodes|sort(attribute='category') %}
 
-            <!-- Tags row -->
+        {% if node.category != ns.current_cat %}
+        {% set ns.current_cat = node.category %}
+        <!-- Category Header -->
+        <tr>
+          <td style="padding:24px 32px 8px 32px;">
+            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-bottom:2px solid #dbe8f3;">
+              <tr>
+                <td style="padding-bottom:8px; font-family:'Helvetica Neue', Helvetica, Arial, sans-serif; font-size:12px; font-weight:700; letter-spacing:0.08em; text-transform:uppercase; color:#1c5d8f;">
+                  {{ node.category.replace('_', ' · ') }}
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        {% endif %}
+
+        <!-- Article -->
+        <tr>
+          <td style="padding:16px 32px 0 32px;">
+            <!-- Tags -->
             <table role="presentation" cellpadding="0" cellspacing="0" border="0">
               <tr>
-                <td style="padding:3px 8px; background-color:#dbe8f3; border-radius:4px; font-family:'Helvetica Neue', Helvetica, Arial, sans-serif; font-size:11px; font-weight:700; color:#17395d;">
-                  {{ node.category }}
-                </td>
-                <td style="width:6px;"></td>
                 <td style="padding:3px 8px; background-color:#f0e5d6; border-radius:4px; font-family:'Helvetica Neue', Helvetica, Arial, sans-serif; font-size:11px; font-weight:700; color:#5c4020;">
                   {{ node.event.jurisdiction.value }}
                 </td>
@@ -87,13 +93,20 @@
               </tr>
             </table>
 
-            <!-- Title -->
+            <!-- Title (Korean + English) -->
             <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
               <tr>
                 <td style="padding-top:10px; font-family:Georgia, 'Noto Serif', serif; font-size:18px; font-weight:700; color:#1A1A1A; line-height:1.4;">
-                  <a href="{{ node.url }}" target="_blank" style="color:#1A1A1A; text-decoration:none;">{{ node.title }}</a>
+                  {% if node.title_ko %}{{ node.title_ko }}{% else %}{{ node.title }}{% endif %}
                 </td>
               </tr>
+              {% if node.title_ko %}
+              <tr>
+                <td style="padding-top:2px; font-family:'Helvetica Neue', Helvetica, Arial, sans-serif; font-size:13px; color:#9CA3AF; line-height:1.4;">
+                  {{ node.title }}
+                </td>
+              </tr>
+              {% endif %}
               <tr>
                 <td style="padding-top:4px; font-family:'Helvetica Neue', Helvetica, Arial, sans-serif; font-size:13px; color:#6B7280; line-height:1.4;">
                   {{ node.source }} · {{ node.pub_date }}
@@ -115,7 +128,7 @@
               {% endfor %}
             </table>
 
-            <!-- Read source link -->
+            <!-- Link -->
             <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="margin-top:10px;">
               <tr>
                 <td>
@@ -123,13 +136,19 @@
                 </td>
               </tr>
             </table>
+
+            <!-- Divider -->
+            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-top:16px;">
+              <tr><td style="border-top:1px solid #F0F0EE;"></td></tr>
+            </table>
           </td>
         </tr>
+
         {% endfor %}
 
         <!-- FOOTER -->
         <tr>
-          <td style="padding:28px 32px 32px 32px; border-top:1px solid #E5E5E5; margin-top:20px;">
+          <td style="padding:24px 32px 32px 32px; border-top:1px solid #E5E5E5;">
             <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
               <tr>
                 <td align="center" style="font-family:'Helvetica Neue', Helvetica, Arial, sans-serif; font-size:12px; color:#9CA3AF; line-height:1.6;">

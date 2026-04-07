@@ -45,7 +45,9 @@ class OfflineLLMProvider(LLMProvider):
             elif "privacy" in text or "coppa" in text or "data" in text:
                 focus_ko = "개인정보 규제"
 
+            title_raw = title_match.group(1).strip() if title_match else "게임 규제 동향"
             return {
+                "title_ko": f"[샘플] {title_raw}",
                 "summary_ko": [
                     f"{jurisdiction_ko}에서 {focus_ko} 관련 움직임이 포착됐다.",
                     "게임사 실무에 미칠 영향과 후속 집행 가능성을 함께 볼 필요가 있다.",

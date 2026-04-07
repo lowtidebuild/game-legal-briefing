@@ -71,6 +71,7 @@ class BriefingNode:
     event: LegalEvent
     event_key: str
     is_primary: bool
+    title_ko: str = ""
 
 
 def briefing_node_to_dict(node: BriefingNode) -> dict:
@@ -105,5 +106,6 @@ def dict_to_briefing_node(data: dict) -> BriefingNode:
         event=event,
         event_key=data["event_key"],
         is_primary=bool(data["is_primary"]),
+        title_ko=data.get("title_ko", ""),
     )
 

@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import logging
+from dataclasses import dataclass
 
 from pipeline.llm.base import LLMProvider
 from pipeline.sources.rss import RawArticle
@@ -10,17 +11,29 @@ logger = logging.getLogger(__name__)
 SUMMARIZER_SYSTEM = "You are a legal analyst specializing in the game industry. Summarize in Korean."
 
 SUMMARIZER_PROMPT = """다음 기사를 게임 산업 규제 브리핑용으로 한국어 3줄 요약해주세요.
+또한 기사 제목을 자연스러운 한국어로 번역해주세요.
+
+규칙:
+- 인명, 회사명, 기관명은 한글(원문) 병기 (예: 밸브(Valve), 닌텐도(Nintendo), 연방거래위원회(FTC))
+- 널리 알려진 영문 약어는 영어만 표기해도 됨 (예: EU, GDPR, COPPA)
+- 제목과 요약 모두 이 규칙 적용
 
 제목: {title}
 출처: {source}
 내용: {description}
 
 JSON만 반환하세요:
-{{"summary_ko": ["첫째 줄", "둘째 줄", "셋째 줄"]}}"""
+{{"title_ko": "한국어 제목", "summary_ko": ["첫째 줄", "둘째 줄", "셋째 줄"]}}"""
 
 
-def summarize_article(article: RawArticle, llm: LLMProvider) -> list[str]:
-    """Summarize one article in Korean, or fall back to the title."""
+@dataclass
+class SummaryResult:
+    title_ko: str
+    summary_ko: list[str]
+
+
+def summarize_article(article: RawArticle, llm: LLMProvider) -> SummaryResult:
+    """Summarize one article in Korean with a translated title."""
     prompt = SUMMARIZER_PROMPT.format(
         title=article.title,
         source=article.source,
@@ -29,11 +42,18 @@ def summarize_article(article: RawArticle, llm: LLMProvider) -> list[str]:
 
     try:
         payload = llm.generate_json(prompt, system=SUMMARIZER_SYSTEM)
-        summary = payload.get("summary_ko", []) if isinstance(payload, dict) else []
+        if not isinstance(payload, dict):
+            return SummaryResult(title_ko="", summary_ko=[article.title])
+
+        title_ko = str(payload.get("title_ko", "")).strip()
+        summary = payload.get("summary_ko", [])
         if isinstance(summary, str):
             summary = [summary]
         summary = [line.strip() for line in summary if str(line).strip()]
-        return summary[:3] or [article.title]
+        return SummaryResult(
+            title_ko=title_ko,
+            summary_ko=summary[:3] or [article.title],
+        )
     except Exception as exc:
         logger.warning("Summarization failed for '%s': %s", article.title, exc)
-        return [article.title]
+        return SummaryResult(title_ko="", summary_ko=[article.title])

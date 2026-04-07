@@ -162,6 +162,13 @@ hr.divider {
 }
 .card-title a:hover { color: var(--accent); }
 
+.card-title-en {
+  font-size: 13px;
+  color: var(--text-secondary);
+  margin: -2px 0 6px;
+  line-height: 1.4;
+}
+
 .card-source {
   font-size: 13px;
   color: var(--text-secondary);

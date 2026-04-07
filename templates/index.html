@@ -25,36 +25,46 @@
     <hr class="divider">
 
     {% if nodes %}
-    <div class="section-title">Latest Briefing<span class="section-count">{{ nodes | length }} items</span></div>
+    {% set ns = namespace(current_cat='') %}
+    {% for node in nodes|sort(attribute='category') %}
 
+    {% if node.category != ns.current_cat %}
+    {% set ns.current_cat = node.category %}
+    <div class="section-title">{{ node.category.replace('_', ' · ') }}</div>
+    {% endif %}
+
+    {% if loop.first or node.category != (nodes|sort(attribute='category'))[loop.index0 - 1].category %}
     <section class="briefing-list">
-      {% for node in nodes %}
+    {% endif %}
+
       <article class="briefing-card">
         <div class="card-meta">
-          <span class="tag tag-category">{{ node.category }}</span>
           <span class="tag tag-jurisdiction">{{ node.event.jurisdiction.value }}</span>
           <span class="tag tag-phase">{{ node.event.regulatory_phase.value }}</span>
         </div>
-        <h3 class="card-title"><a href="{{ base_url }}/article/{{ node.event_key }}.html">{{ node.title }}</a></h3>
+        <h3 class="card-title">
+          <a href="{{ base_url }}/article/{{ node.event_key }}.html">
+            {% if node.title_ko %}{{ node.title_ko }}{% else %}{{ node.title }}{% endif %}
+          </a>
+        </h3>
+        {% if node.title_ko %}
+        <p class="card-title-en">{{ node.title }}</p>
+        {% endif %}
         <p class="card-source">{{ node.source }} · {{ node.pub_date }}</p>
         <ul class="card-summary">
           {% for line in node.summary_ko %}
           <li>{{ line }}</li>
           {% endfor %}
         </ul>
-        <div class="card-detail">
-          {% if node.event.actors %}
-          <span><strong>Actors</strong>{{ node.event.actors | join(", ") }}</span>
-          {% endif %}
-          {% if node.event.game_mechanic %}
-          <span><strong>Mechanic</strong>{{ node.event.game_mechanic }}</span>
-          {% endif %}
-          <span><strong>Type</strong>{{ node.event.event_type.value }}</span>
-        </div>
         <a class="card-link" href="{{ node.url }}" target="_blank" rel="noreferrer">원문 보기 &rarr;</a>
       </article>
-      {% endfor %}
+
+    {% set next_idx = loop.index0 + 1 %}
+    {% if loop.last or node.category != (nodes|sort(attribute='category'))[next_idx].category %}
     </section>
+    {% endif %}
+
+    {% endfor %}
     {% else %}
     <section class="empty-state">
       <h2>아직 브리핑 항목이 없습니다</h2>
