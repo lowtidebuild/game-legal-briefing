@@ -1,28 +1,48 @@
 import os
 import tempfile
+from datetime import datetime
+from types import SimpleNamespace
 from unittest.mock import MagicMock, patch
+
+from pipeline.sources.rss import RawArticle
 
 
 def _make_config():
-    cfg = MagicMock()
-    cfg.llm.provider = "gemini"
-    cfg.llm.model = "gemini-3.1-flash-lite"
-    cfg.llm.max_retries = 2
-    cfg.llm.request_timeout_seconds = 30
-    cfg.google_api_key = None
-    cfg.anthropic_api_key = None
-    cfg.sources.tier_a = []
-    cfg.sources.tier_b = []
-    cfg.pipeline.top_n = 10
-    cfg.pipeline.keywords = []
-    cfg.site.base_url = ""
-    cfg.email.subject_prefix = "[Test]"
-    cfg.smtp_user = None
-    cfg.smtp_pass = None
-    cfg.recipients = []
-    cfg.google_sheets_credentials = None
-    cfg.google_sheets_id = None
-    return cfg
+    return SimpleNamespace(
+        llm=SimpleNamespace(
+            provider="gemini",
+            model="gemini-3.1-flash-lite",
+            max_retries=2,
+            request_timeout_seconds=30,
+            max_input_chars=8000,
+        ),
+        google_api_key=None,
+        anthropic_api_key=None,
+        sources=SimpleNamespace(
+            tier_a=[],
+            tier_b=[],
+            tier_c=[],
+        ),
+        pipeline=SimpleNamespace(
+            top_n=10,
+            keywords=[],
+        ),
+        dedup=SimpleNamespace(
+            retention_days=30,
+        ),
+        site=SimpleNamespace(
+            base_url="",
+        ),
+        email=SimpleNamespace(
+            subject_prefix="[Test]",
+            web_url="https://example.com/web",
+        ),
+        smtp_user=None,
+        smtp_pass=None,
+        recipients=[],
+        google_sheets_credentials=None,
+        google_sheets_id=None,
+    )
 
 
 def _template_dir():
@@ -85,3 +105,38 @@ def test_sample_mode_is_repeatable_on_same_day():
         assert len(files) == 1
         payload = open(os.path.join(daily_path, files[0]), encoding="utf-8").read()
         assert "Sample Feed" in payload
+
+
+def test_dry_run_without_api_key_uses_offline_provider_for_live_pipeline():
+    cfg = _make_config()
+    today = datetime.now().strftime("%Y-%m-%d")
+    article = RawArticle(
+        title="FTC issues new gaming policy",
+        url="https://example.com/ftc",
+        source="Test Feed",
+        description="FTC policy update for gaming platforms",
+        pub_date=today,
+    )
+
+    with tempfile.TemporaryDirectory() as tmpdir:
+        with (
+            patch("main.load_config", return_value=cfg),
+            patch("main.create_provider", side_effect=ValueError("missing key")),
+            patch("main.fetch_all_feeds", return_value=[article]),
+        ):
+            from main import run_pipeline
+
+            run_pipeline(
+                config_path="config.yaml",
+                output_dir=tmpdir,
+                template_dir=_template_dir(),
+                static_dir=_static_dir(),
+                dry_run=True,
+                use_sample_data=False,
+            )
+
+        data_dir = os.path.join(tmpdir, "data", "daily")
+        json_files = [name for name in os.listdir(data_dir) if name.endswith(".json")]
+        assert len(json_files) == 1
+        payload = open(os.path.join(data_dir, json_files[0]), encoding="utf-8").read()
+        assert "Test Feed" in payload

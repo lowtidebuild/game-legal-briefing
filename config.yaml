@@ -116,6 +116,53 @@ sources:
       url: "https://www.famitsu.com/feed/"
     - name: "Norton Rose Fulbright - Regulation Tomorrow"
       url: "https://www.regulationtomorrow.com/feed/"
+  tier_c:
+    # Korean government agencies - top 3 have scrapers; rest log "not implemented"
+    - name: 문화체육관광부
+      url: https://www.mcst.go.kr/kor/s_notice/press/pressList.jsp
+    - name: 게임물관리위원회
+      url: https://www.grac.or.kr/board/Inform.aspx?searchtype=001&type=list
+    - name: 공정거래위원회
+      url: https://www.ftc.go.kr/www/selectBbsNttList.do?bordCd=3&key=12&searchCtgry=01,02
+    # Remaining Korean government agencies (scraper NOT yet implemented)
+    - name: 의안정보시스템
+      url: https://likms.assembly.go.kr/bill/
+    - name: 한국콘텐츠진흥원
+      url: https://www.kocca.kr/
+    - name: 고용노동부
+      url: https://www.moel.go.kr/
+    - name: 보건복지부
+      url: https://www.mohw.go.kr/
+    - name: 여성가족부
+      url: https://www.mogef.go.kr/
+    - name: 방송통신위원회
+      url: https://kcc.go.kr/
+    - name: 사행산업통합감독위원회
+      url: https://www.ngcc.go.kr/
+    - name: 국가유산청
+      url: https://www.khs.go.kr/
+    # International regulators (scraper NOT yet implemented)
+    - name: European Commission
+      url: https://ec.europa.eu/
+    - name: UK Government
+      url: https://www.gov.uk/
+    - name: ICO (UK)
+      url: https://ico.org.uk/
+    - name: US FTC
+      url: https://www.ftc.gov/
+    - name: Federal Register
+      url: https://www.federalregister.gov/
+    - name: eSafety Commissioner (AU)
+      url: https://www.esafety.gov.au/
+    # Korean BigLaw newsletters (scraper NOT yet implemented)
+    - name: "Yulchon - Newsletters"
+      url: "https://www.yulchon.com/ko/resources/publications/newsletter.do"
+    - name: "Lee & Ko - Newsletters"
+      url: "https://www.leeko.com/leenko/news/newsLetterList.do?lang=KR"
+    - name: "BKL - Newsletters"
+      url: "https://www.bkl.co.kr/law/insight/legalDataList"
+    - name: "Kim & Chang IP - Insights"
+      url: "https://www.ip.kimchang.com/ko/insights/index.kc"
 
 pipeline:
   top_n: 10
@@ -131,27 +178,35 @@ pipeline:
     - LABOR_EMPLOYMENT
     - ETC
   keywords:
-    - game
-    - gaming
-    - loot box
-    - microtransaction
-    - esports
-    - age rating
-    - PEGI
-    - ESRB
-    - CERO
-    - Nintendo
-    - Sony
-    - Microsoft
-    - Epic Games
-    - Steam
-    - Valve
+    - lawsuit
+    - sue
+    - court
+    - judge
+    - litigation
+    - patent
+    - copyright
+    - trademark
+    - infringement
     - regulation
-    - FTC
+    - compliance
+    - antitrust
+    - monopoly
+    - labor
+    - union
     - privacy
-    - data protection
-    - GDPR
-    - COPPA
+    - security
+    - data breach
+    - policy
+    - legislation
+    - AI
+    - artificial intelligence
+    - esports
+    - loot box
+    - gambling
+    - FTC
+    - EU
+    - DMA
+    - DSA
 
 dedup:
   retention_days: 30
@@ -161,3 +216,4 @@ site:
 
 email:
   subject_prefix: "[Game Legal Briefing]"
+  web_url: "https://lowtidebuild.github.io/game-legal-briefing/"

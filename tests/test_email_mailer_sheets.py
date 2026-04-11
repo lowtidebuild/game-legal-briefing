@@ -7,14 +7,24 @@ from pipeline.models import BriefingNode, EventType, Jurisdiction, LegalEvent, R
 from pipeline.render.email import render_email
 
 
-def _node() -> BriefingNode:
+def _node(
+    *,
+    title: str = "Test Article",
+    title_ko: str = "테스트 기사",
+    url: str = "https://example.com",
+    source: str = "TestFeed",
+    pub_date: str = "2026-03-23",
+    category: str = "IP",
+    summary_ko: list[str] | None = None,
+) -> BriefingNode:
     return BriefingNode(
-        title="Test Article",
-        url="https://example.com",
-        source="TestFeed",
-        pub_date="2026-03-23",
-        category="IP",
-        summary_ko=["요약 1", "요약 2"],
+        title=title,
+        title_ko=title_ko,
+        url=url,
+        source=source,
+        pub_date=pub_date,
+        category=category,
+        summary_ko=summary_ko or ["요약 1", "요약 2", "요약 3"],
         event=LegalEvent(
             jurisdiction=Jurisdiction.US,
             event_type=EventType.LITIGATION,
@@ -30,11 +40,59 @@ def _node() -> BriefingNode:
     )
 
 
+def _make_sample_nodes() -> list[BriefingNode]:
+    return [
+        _node(
+            title="Sony acquires AI company",
+            title_ko="소니, AI 기업 인수",
+            category="MA_CORP_ANTITRUST",
+            source="GamesIndustry.biz",
+            pub_date="2026-04-07",
+            summary_ko=["첫 번째 문장.", "두 번째 문장.", "세 번째 문장."],
+        ),
+        _node(
+            title="Savvy leads M&A activity",
+            title_ko="새비 게임즈, M&A 시장 주도",
+            category="MA_CORP_ANTITRUST",
+            source="PocketGamer.biz",
+            pub_date="2026-04-07",
+            summary_ko=["M&A 첫째.", "M&A 둘째.", "M&A 셋째."],
+        ),
+        _node(
+            title="Nintendo patent ruling",
+            title_ko="닌텐도 특허 출원 거절",
+            category="IP",
+            source="GamesIndustry.biz",
+            pub_date="2026-04-02",
+            summary_ko=["IP 첫째.", "IP 둘째.", "IP 셋째."],
+        ),
+        _node(
+            title="Hogan Lovells AI checklist",
+            title_ko="",
+            category="PRIVACY_SECURITY",
+            source="Hogan Lovells",
+            pub_date="2026-04-05",
+            summary_ko=["보안 첫째.", "보안 둘째.", "보안 셋째."],
+        ),
+    ]
+
+
 def test_render_email_and_format_row():
     template_dir = os.path.join(os.path.dirname(__file__), "..", "templates")
-    html = render_email(nodes=[_node()], date="2026-03-23", template_dir=template_dir)
+    html = render_email(
+        nodes=[_node()],
+        date="2026-03-23",
+        template_dir=template_dir,
+        web_url="https://example.com/archive",
+    )
     row = format_row(_node())
     assert "Game Legal Briefing" in html
+    assert "게임산업 법무·규제 브리핑" in html
+    assert "①" in html
+    assert "#6b1010" in html
+    assert "#f4efe6" in html
+    assert "Noto Serif KR" in html or "Pretendard" in html
+    assert "https://example.com/archive" in html
     assert row[0] == "2026-03-23"
 
 
@@ -68,3 +126,28 @@ def test_sync_to_sheets_appends_rows():
     with patch("pipeline.admin.sheets._get_worksheet", return_value=sheet):
         sync_to_sheets([_node()], credentials_json="{}", spreadsheet_id="test-id")
         sheet.append_rows.assert_called_once()
+
+
+def test_render_email_structure_and_breadcrumbs():
+    template_dir = os.path.join(os.path.dirname(__file__), "..", "templates")
+
+    html = render_email(
+        nodes=_make_sample_nodes(),
+        date="2026-04-11",
+        template_dir=template_dir,
+        web_url="https://example.com/web",
+    )
+
+    expected_labels = ["지식재산권", "M&amp;A / 독점금지", "개인정보 / 보안"]
+    assert sum(html.count(label) for label in expected_labels) == 3
+    assert "IP 1" in html
+    assert "M&amp;A 2" in html
+    assert "개인정보 1" in html
+    assert "①" in html and "②" in html and "③" in html
+    assert "소니, AI 기업 인수" in html
+    assert "새비 게임즈, M&amp;A 시장 주도" in html
+    assert "닌텐도 특허 출원 거절" in html
+    assert "Hogan Lovells AI checklist" in html
+    assert 'href="https://example.com/web"' in html
+    assert "소니, AI 기업 인수" in html
+    assert "Hogan Lovells AI checklist" in html

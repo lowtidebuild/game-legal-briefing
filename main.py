@@ -35,7 +35,7 @@ logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(name
 logger = logging.getLogger(__name__)
 
 
-def _build_provider(cfg, use_sample_data: bool) -> LLMProvider:
+def _build_provider(cfg, use_sample_data: bool, dry_run: bool = False) -> LLMProvider:
     try:
         return create_provider(
             cfg.llm,
@@ -43,8 +43,9 @@ def _build_provider(cfg, use_sample_data: bool) -> LLMProvider:
             anthropic_api_key=cfg.anthropic_api_key,
         )
     except Exception as exc:
-        if use_sample_data:
-            logger.warning("Falling back to offline sample mode without live LLM access: %s", exc)
+        if use_sample_data or dry_run:
+            mode = "sample mode" if use_sample_data else "dry-run mode"
+            logger.warning("Falling back to offline %s without live LLM access: %s", mode, exc)
             return OfflineLLMProvider()
         raise
 
@@ -65,12 +66,18 @@ def run_pipeline(
     output_data_dir = os.path.join(output_dir, "data", "daily")
     dedup_path = os.path.join(output_dir, "data", "dedup_index.json")
 
-    llm = _build_provider(cfg, use_sample_data=use_sample_data)
+    llm = _build_provider(cfg, use_sample_data=use_sample_data, dry_run=dry_run)
 
-    articles = sample_articles() if use_sample_data else fetch_all_feeds(
-        tier_a=cfg.sources.tier_a,
-        tier_b=cfg.sources.tier_b,
-    )
+    if use_sample_data:
+        articles = sample_articles()
+    else:
+        articles = fetch_all_feeds(
+            tier_a=cfg.sources.tier_a,
+            tier_b=cfg.sources.tier_b,
+        )
+        from pipeline.sources.tier_c import fetch_tier_c
+
+        articles.extend(fetch_tier_c(cfg.sources.tier_c))
     articles = keyword_filter(articles, keywords=cfg.pipeline.keywords)
     if not use_sample_data:
         articles = recency_filter(articles, max_age_days=7)
@@ -144,7 +151,7 @@ def run_pipeline(
 
     if not dry_run and nodes and cfg.smtp_user and cfg.smtp_pass and cfg.recipients:
         send_briefing_email(
-            html_body=render_email(nodes, today, template_dir=template_dir),
+            html_body=render_email(nodes, today, template_dir=template_dir, web_url=cfg.email.web_url),
             subject=f"{cfg.email.subject_prefix} {today}",
             smtp_user=cfg.smtp_user,
             smtp_pass=cfg.smtp_pass,

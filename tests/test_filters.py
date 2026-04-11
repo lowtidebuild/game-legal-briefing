@@ -26,3 +26,35 @@ def test_keyword_filter_returns_all_without_keywords():
     articles = [_article("Anything")]
     assert keyword_filter(articles, []) == articles
 
+
+def test_keyword_filter_enforces_word_boundaries():
+    articles = [
+        _article("This email was sent yesterday"),
+        _article("The CEO said", description="again and again"),
+        _article("New AI regulation proposed"),
+    ]
+    result = keyword_filter(articles, ["AI"])
+    assert len(result) == 1
+    assert result[0].title == "New AI regulation proposed"
+
+
+def test_keyword_filter_case_insensitive():
+    articles = [
+        _article("Gaming LAWSUIT filed today"),
+        _article("A lawsuit is pending"),
+    ]
+    result = keyword_filter(articles, ["lawsuit"])
+    assert len(result) == 2
+
+
+def test_keyword_filter_multi_word_keywords():
+    articles = [
+        _article("LOOT BOX regulations tightened"),
+        _article("Loot box proposal"),
+        _article("Loot and box separate"),
+    ]
+    result = keyword_filter(articles, ["loot box"])
+    assert [article.title for article in result] == [
+        "LOOT BOX regulations tightened",
+        "Loot box proposal",
+    ]

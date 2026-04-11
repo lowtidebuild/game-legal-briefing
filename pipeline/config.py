@@ -25,6 +25,7 @@ class SourceEntry:
 class SourcesConfig:
     tier_a: list[SourceEntry] = field(default_factory=list)
     tier_b: list[SourceEntry] = field(default_factory=list)
+    tier_c: list[SourceEntry] = field(default_factory=list)
 
 
 @dataclass
@@ -47,6 +48,7 @@ class SiteConfig:
 @dataclass
 class EmailConfig:
     subject_prefix: str = "[Game Legal Briefing]"
+    web_url: str = "https://lowtidebuild.github.io/game-legal-briefing/"
 
 
 @dataclass
@@ -98,6 +100,10 @@ def _load_sources(raw_sources: dict) -> SourcesConfig:
             SourceEntry(name=entry["name"], url=entry["url"])
             for entry in raw_sources.get("tier_b", [])
         ],
+        tier_c=[
+            SourceEntry(name=entry["name"], url=entry["url"])
+            for entry in raw_sources.get("tier_c", [])
+        ],
     )
 
 
@@ -134,5 +140,6 @@ def load_config(path: str) -> Config:
         ),
         email=EmailConfig(
             subject_prefix=email_raw.get("subject_prefix", "[Game Legal Briefing]"),
+            web_url=email_raw.get("web_url", "https://lowtidebuild.github.io/game-legal-briefing/"),
         ),
     )
