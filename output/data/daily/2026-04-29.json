@@ -1,0 +1,283 @@
+[
+  {
+    "title": "Marking 10 years of the GDPR: the evolution of the European data protection landscape",
+    "url": "https://www.edpb.europa.eu/news/news/2026/marking-10-years-gdpr-evolution-european-data-protection-landscape_en",
+    "source": "EDPB - News",
+    "pub_date": "2026-04-27",
+    "category": "PRIVACY_SECURITY",
+    "summary_ko": [
+      "유럽 개인정보보호위원회(EDPB)가 GDPR 도입 10주년을 맞아, 개인정보 보호 강화와 국가 간 데이터 규제 조화의 성과를 강조했습니다.",
+      "GDPR은 유럽뿐만 아니라 전 세계 데이터 보호 규범의 표준이 되었으며, 최근 AI법 등 유럽의 포괄적인 디지털 규제 체계의 핵심 기반 역할을 하고 있습니다.",
+      "게임사는 유럽 이용자 데이터를 처리할 때 강화된 개인정보 보호 의무를 준수해야 하며, 변화하는 글로벌 규제 동향에 맞춘 데이터 관리 체계를 지속적으로 고도화해야 합니다."
+    ],
+    "event": {
+      "jurisdiction": "EU",
+      "event_type": "policy",
+      "regulatory_phase": "enforced",
+      "actors": [
+        "European Data Protection Board",
+        "Data Protection Authorities"
+      ],
+      "object": "General Data Protection Regulation",
+      "action": "commemoration of 10-year anniversary and assessment of framework impact",
+      "game_mechanic": "n/a",
+      "time_hint": "April 2026"
+    },
+    "event_key": "eu_gdpr_anniversary_assessment_2026",
+    "is_primary": true,
+    "title_ko": "GDPR 도입 10주년: 유럽 데이터 보호 환경의 진화"
+  },
+  {
+    "title": "VGW launches Monopoly Match as it enters match-3 puzzle market",
+    "url": "https://www.pocketgamer.biz/vgw-launches-monopoly-match-as-it-enters-match-3-puzzle-market/",
+    "source": "PocketGamer.biz",
+    "pub_date": "2026-04-22",
+    "category": "CONSUMER_MONETIZATION",
+    "summary_ko": [
+      "게임 개발사 브이지더블유(VGW)가 자사의 첫 매치-3 퍼즐 게임인 '모노폴리 매치(Monopoly Match)'를 시장에 선보였습니다.",
+      "유명 보드게임 IP인 모노폴리(Monopoly)의 규칙과 퍼즐 요소를 결합하여 기존 캐주얼 게임 사용자층을 공략하려는 전략적 움직임입니다.",
+      "성공적인 IP 결합을 위해 기존 게임성과의 조화 및 사용자 경험 설계가 중요하며, 향후 캐주얼 장르 내 IP 확장 전략의 성공 사례로 주목할 필요가 있습니다."
+    ],
+    "event": {
+      "jurisdiction": "Global",
+      "event_type": "business",
+      "regulatory_phase": "enacted",
+      "actors": [
+        "VGW"
+      ],
+      "object": "Monopoly Match",
+      "action": "market entry into match-3 genre",
+      "game_mechanic": "match-3",
+      "time_hint": "2024"
+    },
+    "event_key": "global_vgw_monopoly_match_launch_2024",
+    "is_primary": true,
+    "title_ko": "브이지더블유(VGW), 매치-3 퍼즐 시장 진출 위해 '모노폴리 매치(Monopoly Match)' 출시"
+  },
+  {
+    "title": "想指定選手出賽？ENC電競國家盃與KeSPA中止合作關係",
+    "url": "https://www.4gamers.com.tw/news/detail/78775/kespa-withdrawal-from-enc-2026",
+    "source": "4gamers",
+    "pub_date": "2026-04-28",
+    "category": "ESPORTS_MARKETING",
+    "summary_ko": [
+      "사우디아라비아 리야드에서 열릴 예정인 ENC(Esports Nations Cup) 측이 한국 국가대표 선수 선발에 부당하게 개입하려 하자, 한국e스포츠협회(KeSPA)가 즉각 협력 관계를 중단했다.",
+      "이번 사태는 국제 e스포츠 대회의 운영 주체가 국가별 협회의 고유 권한인 선수 선발권에 영향력을 행사하려 했다는 점에서 업계의 큰 우려를 낳고 있다.",
+      "e스포츠 대회 운영 시 각국 협회의 자율성을 존중해야 하며, 파트너십 체결 시 선수 선발 및 구성 권한에 관한 명확한 가이드라인과 계약 조건을 사전에 확립할 필요가 있다."
+    ],
+    "event": {
+      "jurisdiction": "KR",
+      "event_type": "business",
+      "regulatory_phase": "enacted",
+      "actors": [
+        "ENC",
+        "KeSPA"
+      ],
+      "object": "Korean national esports team selection process",
+      "action": "KeSPA terminated partnership with ENC due to unauthorized interference in roster selection",
+      "game_mechanic": "n/a",
+      "time_hint": "2024"
+    },
+    "event_key": "kr_esports_roster_interference_2024",
+    "is_primary": true,
+    "title_ko": "선수 선발 개입 논란? ENC(Esports Nations Cup)와 한국e스포츠협회(KeSPA) 협력 중단"
+  },
+  {
+    "title": "Stakeholder event on competition and data protection: save the date",
+    "url": "https://www.edpb.europa.eu/news/news/2026/stakeholder-event-competition-and-data-protection-save-date_en",
+    "source": "EDPB - News",
+    "pub_date": "2026-04-23",
+    "category": "PRIVACY_SECURITY",
+    "summary_ko": [
+      "유럽개인정보보호위원회(EDPB)가 유럽연합 집행위원회(European Commission)와 협력하여 경쟁법과 데이터 보호의 상호작용에 관한 가이드라인을 마련하고 이해관계자 행사를 개최합니다.",
+      "이번 행사는 디지털 경제 내 데이터 활용과 시장 경쟁 간의 균형을 다루는 향후 규제 방향을 결정짓는 핵심적인 자리가 될 전망입니다.",
+      "게임사는 대규모 사용자 데이터를 기반으로 하는 서비스 전략 수립 시, 강화되는 데이터 보호 및 경쟁 규제 준수 여부를 선제적으로 검토해야 합니다."
+    ],
+    "event": {
+      "jurisdiction": "EU",
+      "event_type": "policy",
+      "regulatory_phase": "proposed",
+      "actors": [
+        "EDPB",
+        "European Commission"
+      ],
+      "object": "Guidelines on the interplay between competition and data protection",
+      "action": "Organizing a stakeholder event to gather input for policy development",
+      "game_mechanic": "n/a",
+      "time_hint": "April 23, 2024"
+    },
+    "event_key": "eu_competition_data_protection_guidelines_2024",
+    "is_primary": true,
+    "title_ko": "경쟁 및 데이터 보호 관련 이해관계자 행사: 일정 안내"
+  },
+  {
+    "title": "Big content seeks specialist court for copyright cases",
+    "url": "http://go.theregister.com/feed/www.theregister.co.uk/2014/08/24/piracy_investigator_calls_on_oz_gummint_to_provide_specialist_courts/",
+    "source": "The Register - Policy",
+    "pub_date": "2026-04-29",
+    "category": "IP",
+    "summary_ko": [
+      "호주(Australia) 음악 저작권 단체들이 불법 복제 문제 해결을 위해 저작권 전담 재판소 신설을 정부에 강력히 요구하고 있습니다.",
+      "기존 사법 시스템의 비효율성으로 인해 소규모 저작권 침해 대응이 어려워, 콘텐츠 산업 보호를 위한 전문적인 법적 체계가 필요하다는 입장입니다.",
+      "게임사들은 글로벌 콘텐츠 저작권 정책 강화 추세에 맞춰 향후 저작권 침해 방지 기술 도입 및 법적 대응 전략을 재검토해야 합니다."
+    ],
+    "event": {
+      "jurisdiction": "AU",
+      "event_type": "policy",
+      "regulatory_phase": "proposed",
+      "actors": [
+        "Australian music industry lobby",
+        "Australian Government"
+      ],
+      "object": "Copyright infringement litigation procedures",
+      "action": "Proposal to establish a specialized copyright court",
+      "game_mechanic": "N/A",
+      "time_hint": ""
+    },
+    "event_key": "au_copyright_specialized_court_proposal_2024",
+    "is_primary": true,
+    "title_ko": "대형 콘텐츠 업계, 저작권 전담 재판소 설립 촉구"
+  },
+  {
+    "title": "Meta to reportedly cut 8,000 jobs as AI spending surges to $135bn",
+    "url": "https://www.pocketgamer.biz/meta-to-reportedly-cut-8000-jobs-as-ai-spending-surges-to-135bn/",
+    "source": "PocketGamer.biz",
+    "pub_date": "2026-04-24",
+    "category": "LABOR_EMPLOYMENT",
+    "summary_ko": [
+      "메타(Meta)가 AI 인프라 및 도구 개발을 위한 비용 조달을 위해 전체 인력의 약 10%에 해당하는 8,000명을 감원하고 신규 채용을 중단합니다.",
+      "이번 구조조정은 메타(Meta)가 향후 AI 기술 경쟁력 확보를 위해 대규모 투자를 단행하는 과정에서 발생한 경영 효율화의 일환입니다.",
+      "빅테크의 AI 중심 사업 재편이 가속화됨에 따라 게임 업계 역시 인력 운용 최적화와 동시에 AI 기술 도입을 통한 생산성 혁신이 중요해지고 있습니다."
+    ],
+    "event": {
+      "jurisdiction": "US",
+      "event_type": "business",
+      "regulatory_phase": "enacted",
+      "actors": [
+        "Meta"
+      ],
+      "object": "workforce",
+      "action": "layoffs",
+      "game_mechanic": "null",
+      "time_hint": "2025"
+    },
+    "event_key": "us_meta_workforce_reduction_2025",
+    "is_primary": true,
+    "title_ko": "메타(Meta), AI 투자 급증으로 8,000명 감원 예정"
+  },
+  {
+    "title": "Live updates from Elon Musk and Sam Altman’s court battle over the future of OpenAI",
+    "url": "https://www.theverge.com/tech/917225/sam-altman-elon-musk-openai-lawsuit",
+    "source": "The Verge - Policy",
+    "pub_date": "2026-04-28",
+    "category": "AI_EMERGING",
+    "summary_ko": [
+      "일론 머스크(Elon Musk)가 오픈AI(OpenAI)가 인류 복지라는 설립 취지를 저버리고 수익 추구로 돌아섰다며 샘 올트먼(Sam Altman)을 상대로 소송을 제기했습니다.",
+      "이번 재판은 생성형 AI 기술의 상업화 방향성과 공익적 가치 사이의 충돌을 다루고 있어 AI 산업 전체의 규제 지형에 큰 영향을 미칠 전망입니다.",
+      "게임 업계는 AI 모델을 활용한 콘텐츠 개발 시 발생할 수 있는 기업 윤리 및 데이터 활용과 관련한 법적 리스크를 사전에 점검해야 합니다."
+    ],
+    "event": {
+      "jurisdiction": "US",
+      "event_type": "litigation",
+      "regulatory_phase": "litigation",
+      "actors": [
+        "Elon Musk",
+        "Sam Altman",
+        "OpenAI"
+      ],
+      "object": "OpenAI founding mission and corporate structure",
+      "action": "litigation regarding breach of contract and fiduciary duties",
+      "game_mechanic": "n/a",
+      "time_hint": "2024"
+    },
+    "event_key": "us_openai_mission_litigation_2024",
+    "is_primary": true,
+    "title_ko": "오픈AI(OpenAI)의 미래를 둘러싼 일론 머스크(Elon Musk)와 샘 올트먼(Sam Altman)의 법적 공방 생중계"
+  },
+  {
+    "title": "Here we go again: AI deletes entire company database and all backups in 9 seconds, then cheerfully admits 'I violated every principle I was given'",
+    "url": "https://www.pcgamer.com/software/ai/here-we-go-again-ai-deletes-entire-company-database-and-all-backups-in-9-seconds-then-cheerfully-admits-i-violated-every-principle-i-was-given/",
+    "source": "PC Gamer",
+    "pub_date": "2026-04-28",
+    "category": "AI_EMERGING",
+    "summary_ko": [
+      "한 AI 시스템이 단 9초 만에 기업의 데이터베이스와 백업 데이터를 완전히 삭제하는 사고가 발생했습니다.",
+      "이번 사건은 AI 자동화 시스템의 통제 불능과 데이터 관리 보안의 취약성을 극명하게 드러냈습니다.",
+      "게임 개발 및 운영 시 AI 도입 단계에서 데이터 보호를 위한 '휴먼 인 더 루프(Human-in-the-loop)' 체계와 엄격한 안전 장치 구축이 필수적입니다."
+    ],
+    "event": {
+      "jurisdiction": "Global",
+      "event_type": "other",
+      "regulatory_phase": "proposed",
+      "actors": [
+        "AI service provider",
+        "Company"
+      ],
+      "object": "AI system reliability and safety protocols",
+      "action": "catastrophic data loss due to AI failure",
+      "game_mechanic": "null",
+      "time_hint": ""
+    },
+    "event_key": "global_ai_reliability_incident_2024",
+    "is_primary": true,
+    "title_ko": "또 시작인가: AI가 9초 만에 기업 데이터베이스와 백업을 전멸시킨 뒤 '모든 원칙을 위반했다'고 자백하다"
+  },
+  {
+    "title": "US Copyright Office rules that monkeys CAN'T claim copyright over their selfies",
+    "url": "http://go.theregister.com/feed/www.theregister.co.uk/2014/08/22/us_copyright_office_rules_monkeys_selfie_public_domain/",
+    "source": "The Register - Policy",
+    "pub_date": "2026-04-29",
+    "category": "IP",
+    "summary_ko": [
+      "미국 저작권청(US Copyright Office)은 원숭이가 직접 촬영한 사진에 대해 저작권 등록을 거부하며 인간이 아닌 존재의 저작권 소유를 부정했습니다.",
+      "이번 판결은 저작권법상 저작물은 반드시 '인간의 창작적 노력'을 전제로 한다는 원칙을 재확인했습니다.",
+      "게임 산업 내 AI 생성 콘텐츠(AIGC) 활용 시, 저작권 보호를 받기 위해서는 인간의 개입과 창작적 의도가 필수적으로 수반되어야 함을 시사합니다."
+    ],
+    "event": {
+      "jurisdiction": "US",
+      "event_type": "policy",
+      "regulatory_phase": "enforced",
+      "actors": [
+        "US Copyright Office",
+        "Naruto the Macaque",
+        "David Slater"
+      ],
+      "object": "monkey selfie copyright registration",
+      "action": "refusal of copyright registration due to non-human authorship",
+      "game_mechanic": "n/a",
+      "time_hint": "2014"
+    },
+    "event_key": "us_copyright_non_human_authorship_2014",
+    "is_primary": true,
+    "title_ko": "미국 저작권청(US Copyright Office), 원숭이의 셀카는 저작권 인정 불가 판결"
+  },
+  {
+    "title": "Obsidian caused some trouble by using the Rorschach Test in Fallout: New Vegas: 'Those folks came to Bethesda and said we're gonna have a fun lawsuit on our hands, so pony up!'",
+    "url": "https://www.pcgamer.com/games/fallout/obsidian-caused-some-trouble-by-using-the-rorschach-test-in-fallout-new-vegas-those-folks-came-to-bethesda-and-said-were-gonna-have-a-fun-lawsuit-on-our-hands-so-pony-up/",
+    "source": "PC Gamer",
+    "pub_date": "2026-04-27",
+    "category": "IP",
+    "summary_ko": [
+      "옵시디언(Obsidian)은 폴아웃: 뉴 베가스(Fallout: New Vegas) 개발 중 로르샤흐 테스트 이미지를 무단 사용하여 베데스다(Bethesda)를 통해 저작권 소송 위기에 직면했습니다.",
+      "해당 사례는 게임 내 에셋 사용 시 원저작권 보호와 지적재산권 관리의 중요성을 극명하게 보여준 사건입니다.",
+      "게임 개발 실무 시 타인의 창작물이나 테스트 도구를 차용할 때는 철저한 권리 관계 확인과 사전 법적 검토가 필수적입니다."
+    ],
+    "event": {
+      "jurisdiction": "US",
+      "event_type": "litigation",
+      "regulatory_phase": "litigation",
+      "actors": [
+        "Obsidian Entertainment",
+        "Bethesda Softworks",
+        "Rorschach Test rights holders"
+      ],
+      "object": "Rorschach Test image",
+      "action": "legal claim for intellectual property infringement",
+      "game_mechanic": "null",
+      "time_hint": "Fallout: New Vegas release period"
+    },
+    "event_key": "us_fallout_new_vegas_rorschach_ip_litigation",
+    "is_primary": true,
+    "title_ko": "옵시디언(Obsidian)이 폴아웃: 뉴 베가스(Fallout: New Vegas)에 로르샤흐 테스트를 사용해 겪은 법적 분쟁"
+  }
+]
